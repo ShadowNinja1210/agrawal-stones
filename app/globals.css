@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --primary-2: 0 95% 62%;
+    --primary-2: 0 99% 39%;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -68,3 +68,51 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide scrollbar by default */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Show scrollbar when scrolling */
+.scrollable-element.scrolling::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-element.scrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.scrollable-element.scrolling::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* For Firefox */
+.scrollable-element {
+  scrollbar-width: none;
+}
+
+.scrollable-element.scrolling {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+
+/* .semi-circle {
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 25px;
+  width: 50px;
+  border-radius: 0 0 150px 150px;
+  background-color: green;
+  background-color: hsl(var(--primary-2));
+} */
+
+/* @media (min-width: 1300px) {
+  .testimonial-media {
+    padding-bottom: 0;
+  }
+} */
