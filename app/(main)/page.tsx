@@ -7,7 +7,6 @@ import Hero2 from "@/components/hero-2";
 import Hero3 from "@/components/hero-3";
 import Stones from "@/components/stones";
 import Testimonials from "@/components/testimonials";
-import MainFooter from "@/components/main-footer";
 
 export default function Home() {
   useEffect(() => {
@@ -41,9 +40,6 @@ export default function Home() {
         <Stones />
         <Testimonials />
       </main>
-      <footer className="lg:sticky lg:bottom-0 bg-primary-2 lg:-z-40 z-0 static text-white">
-        <MainFooter />
-      </footer>
     </>
   );
 }

@@ -1,21 +1,27 @@
-import type { Metadata } from "next";
+"use client";
+
+import useStateStore from "@/lib/state-store";
 import "../globals.css";
 import { Navbar } from "@/components/navbar";
-
-export const metadata: Metadata = {
-  title: "Home | Agrawal Stones",
-  description: "Bringing the beauty of nature to your projects",
-};
+import MainLoader from "@/components/loaders/main-loader";
+import MainFooter from "@/components/main-footer";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  const { isLoading } = useStateStore();
+
+  return isLoading ? (
+    <MainLoader />
+  ) : (
     <>
       <Navbar />
       {children}
+      <footer className="bg-primary-2 relative text-white">
+        <MainFooter />
+      </footer>
     </>
   );
 }

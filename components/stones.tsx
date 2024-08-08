@@ -69,7 +69,9 @@ export default function Stones() {
         width={1000}
         height={1000}
         className="w-screen z-0 absolute bottom-0 opacity-80"
-        objectFit="cover"
+        style={{
+          objectFit: "cover",
+        }}
         alt="Services design"
       />
     </section>

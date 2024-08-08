@@ -44,7 +44,9 @@ export default function Commitment() {
         width={1000}
         height={1000}
         className="w-screen absolute -bottom-1 opacity-80"
-        objectFit="cover"
+        style={{
+          objectFit: "cover",
+        }}
         alt="Commitment design"
       />
     </section>

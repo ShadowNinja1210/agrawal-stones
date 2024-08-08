@@ -8,8 +8,11 @@ export default function Hero() {
         className=" brightness-[0.4]"
         src="/assets/hero-image.jpg"
         alt="stone-image"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{
+          objectFit: "cover",
+        }}
+        loading="eager"
       />
       <h1
         className={`absolute text-center text-neutral-100 lg:text-7xl md:text-5xl text-4xl px-4 mb-24 font-bold ${cormorantGaramond.className}`}
@@ -22,7 +25,9 @@ export default function Hero() {
         width={1000}
         height={1000}
         className="w-screen absolute -bottom-1"
-        objectFit="cover"
+        style={{
+          objectFit: "cover",
+        }}
       />
     </div>
   );

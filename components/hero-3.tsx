@@ -42,7 +42,9 @@ export default function Hero3() {
         width={1000}
         height={1000}
         className="w-screen absolute -bottom-1 opacity-80"
-        objectFit="cover"
+        style={{
+          objectFit: "cover",
+        }}
         alt="Services design"
       />
     </section>
