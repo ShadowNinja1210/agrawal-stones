@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { questrial } from "@/lib/direct-font";
 import "./globals.css";
-import MainLoader from "@/components/loaders/main-loader";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Agrawal Stones",

@@ -38,7 +38,7 @@ export default function ContactForm() {
       const message = `Customer Enquiry ${date} \nName: ${data.name}\nContact: ${data.contact}\nEmail: ${data.email}\nMessage: ${data.message}`;
 
       // Send message to WhatsApp API
-      const response = await fetch("/api/sendWhatsapp", {
+      const response = await fetch("/api/whatsapp", {
         method: "POST",
         body: JSON.stringify({ message: message }),
         headers: {
