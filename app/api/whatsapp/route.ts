@@ -16,11 +16,6 @@ export async function POST(req: Request) {
       to: "whatsapp:+919929812181",
     });
 
-    // await client.conversations.v1
-    //   .conversations("CH6e67f4597e474d758a514f26d41c0814")
-    //   .messages.create({ author: "system", body: message })
-    //   .then((message) => console.log(message.sid));
-
     return NextResponse.json("Message sent successfully", { status: 200 });
   } catch (error) {
     console.error(error);
