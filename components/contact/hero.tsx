@@ -8,7 +8,7 @@ import { addresses, contacts } from "@/public/assets/data";
 
 export default function ContactHero() {
   return (
-    <section className="container p-10 md:flex md:justify-around">
+    <section className="container p-10 flex md:flex-nowrap flex-wrap-reverse gap-10 w-screen md:justify-around">
       {/* Left Section - Maps */}
       <div className="flex flex-col gap-10">
         {/* Agrawal Stone */}
@@ -26,7 +26,7 @@ export default function ContactHero() {
         </div>
 
         {/* Krishna Udhyog */}
-        <div className=" w-full flex flex-col gap-2 max-w-[400px]">
+        <div className=" flex flex-col gap-2 max-w-[400px]">
           {/* Map */}
           <GMap mapUrl={addresses[1].mapUrl} />
 
@@ -41,8 +41,8 @@ export default function ContactHero() {
       </div>
 
       {/* Right Section - Contact Details and Form */}
-      <div className="flex flex-col gap-8">
-        <Card className="bg-neutral-200 p-6">
+      <div className="flex flex-col gap-8 w-full max-w-[600px]">
+        <Card className="bg-neutral-200 md:p-6">
           {/* Card Header */}
           <CardHeader>
             <CardTitle className="text-primary-2 underline underline-offset-2">
@@ -132,7 +132,7 @@ export default function ContactHero() {
         </Card>
 
         {/* Enquiry Form */}
-        <Card className=" bg-neutral-200 p-6 ">
+        <Card className=" bg-neutral-200 md:p-6 ">
           <CardHeader>
             <CardTitle className="text-primary-2 underline underline-offset-2">
               <strong>Enquiry Form</strong>

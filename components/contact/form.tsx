@@ -59,7 +59,7 @@ export default function ContactForm() {
   // Return the form component
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(submitForm)} className="flex flex-col gap-4 min-w-96 max-w-[500px] w-[500px]">
+      <form onSubmit={form.handleSubmit(submitForm)} className="flex flex-col gap-4 max-w-[500px]">
         {/* Name */}
         <FormField
           control={form.control}
