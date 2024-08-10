@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import Commitment from "@/components/commitment";
 import Hero from "@/components/hero";
@@ -7,8 +7,23 @@ import Hero2 from "@/components/hero-2";
 import Hero3 from "@/components/hero-3";
 import Stones from "@/components/stones";
 import Testimonials from "@/components/testimonials";
+import MainLoader from "@/components/loaders/main-loader";
+import useStateStore from "@/lib/state-store";
 
 export default function Home() {
+  const { isLoading, setIsLoading } = useStateStore();
+  const loaderTimeout = () => {
+    const timeoutId = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  };
+
+  useEffect(loaderTimeout, [setIsLoading]);
+
   useEffect(() => {
     const element = document.querySelector(".scrollable-element") as HTMLElement;
 
@@ -33,6 +48,7 @@ export default function Home() {
   return (
     <>
       <main>
+        {isLoading && <MainLoader />}
         <Hero />
         <Hero2 />
         <Hero3 />

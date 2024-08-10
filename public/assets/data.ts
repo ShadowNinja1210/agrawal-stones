@@ -1,3 +1,5 @@
+const awsBaseUrlFree = "https://agrawalstones.s3.eu-north-1.amazonaws.com";
+
 const contacts = [
   {
     id: 1,
@@ -36,7 +38,7 @@ const addresses = [
 
 const collections = [
   {
-    name: "Luxe Line",
+    name: "Timeless Treasures",
     categories: [
       {
         name: "Handmade Modern Artifact",
@@ -175,4 +177,4 @@ const products = [
   },
 ];
 
-export { contacts, addresses, collections, products };
+export { contacts, addresses, collections, products, awsBaseUrlFree };

@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { awsBaseUrlFree } from "@/public/assets/data";
 
 export default function Commitment() {
   return (
@@ -32,7 +33,7 @@ export default function Commitment() {
       </div>
 
       <Image
-        src="/assets/commitment-image.svg"
+        src={awsBaseUrlFree + "/assets/commitment-image.svg"}
         width={1000}
         height={1000}
         alt="Commitment Stone Image"
@@ -40,7 +41,7 @@ export default function Commitment() {
       />
 
       <Image
-        src="/assets/commitment-design.svg"
+        src={awsBaseUrlFree + "/assets/commitment-design.svg"}
         width={1000}
         height={1000}
         className="w-screen absolute -bottom-1 opacity-80"

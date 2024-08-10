@@ -2,6 +2,7 @@ import Image from "next/image";
 import { cormorantGaramond } from "@/lib/direct-font";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { awsBaseUrlFree } from "@/public/assets/data";
 
 export default function Hero2() {
   return (
@@ -30,7 +31,7 @@ export default function Hero2() {
           </div>
           <div>
             <Button size="lg" variant="outline" className="text-lg">
-              <a href="/assets/agrawal-stones.pdf" download="agrawal-stones">
+              <a href={awsBaseUrlFree + "/assets/agrawal-stones.pdf"} download="agrawal-stones">
                 Our Catalog
               </a>
             </Button>
@@ -38,7 +39,13 @@ export default function Hero2() {
         </div>
       </div>
 
-      <img src="/assets/collage-1.png" alt="collage" className="w-full max-w-screen-md lg:block hidden" />
+      <Image
+        src={awsBaseUrlFree + "/assets/collage-1.png"}
+        alt="collage"
+        width={1500}
+        height={1500}
+        className="w-full max-w-screen-md lg:block hidden"
+      />
 
       <Image src="/assets/single-1.png" alt="collage" width={500} height={500} className=" lg:hidden w-full md:px-10" />
     </section>

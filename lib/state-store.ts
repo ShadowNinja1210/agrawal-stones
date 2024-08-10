@@ -6,8 +6,11 @@ type StateStore = {
 };
 
 const useStateStore = create<StateStore>((set) => ({
-  isLoading: false,
-  setIsLoading: (loading) => set({ isLoading: loading }),
+  isLoading: true,
+  setIsLoading: (loading) => {
+    console.log("Setting the loading state to ", loading);
+    set({ isLoading: loading });
+  },
 }));
 
 export default useStateStore;
