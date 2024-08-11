@@ -43,9 +43,21 @@ const collections = [
       {
         name: "Handmade Modern Artifact",
         imgUrl: "/assets/categories/sensational_collection-kota_blue.png",
-        subCategories: ["Marble", "Sandstone", "Agra Red"],
+        subCategories: [
+          { name: "Marble", imgUrl: "" },
+          { name: "Sandstone", imgUrl: "" },
+          { name: "Agra Red", imgUrl: "" },
+        ],
       },
-      { name: "CNC Work", imgUrl: "", subCategories: ["Jaali Work", "Custom Work", "3D/2D Work"] },
+      {
+        name: "CNC Work",
+        imgUrl: "",
+        subCategories: [
+          { name: "Jaali Work", imgUrl: "" },
+          { name: "Custom Work", imgUrl: "" },
+          { name: "3D/2D Work", imgUrl: "" },
+        ],
+      },
     ],
   },
   {
@@ -54,17 +66,26 @@ const collections = [
       {
         name: "Sandstone",
         imgUrl: "/assets/categories/sensational_collection-kota_blue.png",
-        subCategories: ["Slabs", "Wall Cladding"],
+        subCategories: [
+          { name: "Slabs", imgUrl: "" },
+          { name: "Wall Cladding", imgUrl: "" },
+        ],
       },
       {
         name: "Basalt",
         imgUrl: "/assets/categories/sensational_collection-kota_blue.png",
-        subCategories: ["Slabs", "Wall Cladding"],
+        subCategories: [
+          { name: "Slabs", imgUrl: "" },
+          { name: "Wall Cladding", imgUrl: "" },
+        ],
       },
       {
         name: "Kota Stone",
         imgUrl: "/assets/categories/sensational_collection-kota_blue.png",
-        subCategories: ["Slabs", "Wall Cladding"],
+        subCategories: [
+          { name: "Slabs", imgUrl: "" },
+          { name: "Wall Cladding", imgUrl: "" },
+        ],
       },
     ],
   },

@@ -1,10 +1,20 @@
+"use client";
+
 import { cn } from "@/lib/utils";
+import _ from "lodash";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function ServicesCard({ category }: { category: { name: string; imgUrl: string } }) {
+  const path = usePathname();
+  const list = path?.split("/");
+  const categoryName = list?.[2] ?? "";
+  const categoryKebab = _.kebabCase(category.name);
+
+  const categoryUrl = "/services/" + categoryName + "/" + categoryKebab;
   return (
-    <Link href="#" className={" bg-neutral-100 max-w-96 rounded-md overflow-hidden"}>
+    <Link href={categoryUrl} className={" bg-neutral-100 max-w-96 rounded-md overflow-hidden"}>
       <div className="overflow-hidden rounded-md">
         <Image
           src={category.imgUrl}

@@ -5,13 +5,8 @@ import { collections } from "@/public/assets/data";
 
 export default function ServicesPage() {
   return (
-    <main className="">
-      <div className="bg-primary-2 p-4">
-        <h1 className={cn("text-5xl font-bold text-neutral-100 text-center", cormorantGaramond.className)}>
-          Our Services
-        </h1>
-      </div>
-      <div className="flex flex-col gap-10 md:px-24 px-16 py-6">
+    <>
+      <div className="flex flex-col gap-10">
         {collections.map((collection: any, index: number) => (
           <div key={index} className=" space-y-5">
             <div>
@@ -28,6 +23,6 @@ export default function ServicesPage() {
           </div>
         ))}
       </div>
-    </main>
+    </>
   );
 }
