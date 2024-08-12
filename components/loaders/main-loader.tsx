@@ -1,11 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import "./main-loader.css";
 
 export default function MainLoader() {
   return (
-    <main className="absolute top-0 left-0 h-screen w-screen flex flex-col-reverse items-center justify-center bg-[#FA4443] z-50">
+    <main className="fixed inset-0 h-screen w-screen flex flex-col-reverse items-center justify-center bg-[#FA4443] z-50">
       <div className="newtons-cradle">
         <div className="newtons-cradle__dot"></div>
         <div className="newtons-cradle__dot"></div>

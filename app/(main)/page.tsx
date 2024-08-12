@@ -9,6 +9,7 @@ import Stones from "@/components/stones";
 import Testimonials from "@/components/testimonials";
 import MainLoader from "@/components/loaders/main-loader";
 import useStateStore from "@/lib/state-store";
+import CustomPage from "@/components/custom";
 
 export default function Home() {
   const { isLoading, setIsLoading } = useStateStore();
@@ -47,12 +48,13 @@ export default function Home() {
 
   return (
     <>
+      {isLoading && <MainLoader />}
       <main>
-        {isLoading && <MainLoader />}
         <Hero />
         <Hero2 />
         <Hero3 />
         <Commitment />
+        <CustomPage />
         <Stones />
         <Testimonials />
       </main>

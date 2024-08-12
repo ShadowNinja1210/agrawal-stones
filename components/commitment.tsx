@@ -7,8 +7,8 @@ import { awsBaseUrlFree } from "@/public/assets/data";
 
 export default function Commitment() {
   return (
-    <section className=" relative md:pb-20 pb-0 flex lg:flex-row flex-col-reverse md:px-24 px-16 md:py-8 py-4 justify-around gap-4 items-center bg-neutral-100">
-      <div className="space-y-4 mb-24 bg-primary-2 p-12 max-w-[420px] rounded-xl text-white">
+    <section className=" relative md:pb-20 pb-0 flex lg:flex-row flex-col-reverse md:px-24 px-10 md:py-8 py-4 justify-around gap-4 items-center bg-neutral-100">
+      <div className="space-y-4 mb-24 bg-primary-2 md:p-12 p-10 max-w-[420px] rounded-xl text-white">
         <h1 className={`${cormorantGaramond.className} font-semibold text-white text-5xl `}>
           Our <br />
           Commitment
@@ -44,7 +44,7 @@ export default function Commitment() {
         src={awsBaseUrlFree + "/assets/commitment-design.svg"}
         width={1000}
         height={1000}
-        className="w-screen absolute -bottom-1 opacity-80"
+        className="w-screen absolute -bottom-1"
         style={{
           objectFit: "cover",
         }}

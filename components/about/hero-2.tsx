@@ -2,9 +2,16 @@ import Image from "next/image";
 
 export default function AboutHero2() {
   return (
-    <section className="md:px-24 px-16 py-6 flex gap-20 ">
-      <Image src="/assets/about-stone.png" alt="Agrawal Stones" width={1000} height={1000} className=" w-1/5" />
-      <p className=" first-letter:text-7xl text-lg w-3/4 pt-8">
+    <section className="md:px-24 lg:flex block justify-between sm:px-16 px-10 py-6">
+      <Image
+        src="/assets/about-stone.png"
+        className="w-[250px] h-[388px] lg:float-none float-left mb-4 mr-4"
+        alt="Agrawal Stones"
+        width={300}
+        height={1000}
+      />
+
+      <p className=" first-letter:text-7xl text-justify text-lg pt-8">
         Welcome to the distinguished world of <strong>Agrawal Stones Group</strong>. Recognized nationally as the most
         reliable manufacturer and premier supplier of high-quality limestone, sandstone, and slatestone products, we
         pride ourselves on offering an extensive range of colors, sizes, and finishes to perfectly suit both interior

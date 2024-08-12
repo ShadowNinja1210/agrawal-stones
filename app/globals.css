@@ -111,6 +111,11 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+/* Prevent scrolling */
+.no-scroll {
+  overflow: hidden;
+}
+
 /* .semi-circle {
   position: absolute;
   bottom: 11px;

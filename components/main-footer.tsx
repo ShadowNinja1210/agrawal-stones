@@ -10,7 +10,7 @@ export default function MainFooter() {
 
   return (
     <>
-      <div className=" md:px-24 px-16 flex gap-4 flex-col py-10 shadow-xl">
+      <div className=" md:px-24 px-10 flex gap-4 flex-col py-10 shadow-xl">
         {/* Heading */}
         <h1 className={`${cormorantGaramond.className} pb-6 font-bold text-2xl`}>Producing Quality Products</h1>
 
@@ -79,7 +79,7 @@ export default function MainFooter() {
 
       {/* ----------------------- */}
       {/* Last Footer */}
-      <div className="flex sm:flex-row flex-col sm:text-left text-center justify-between sm:pt-3 pt-5 md:px-24 px-16 py-3">
+      <div className="flex sm:flex-row flex-col sm:text-left text-center justify-between sm:pt-3 pt-5 md:px-24 px-4 py-3">
         <p>Copyright &#169; Agrawal Stones Industry</p>
         <p className=" sm:text-base text-xs">
           Developed by{" "}

@@ -135,11 +135,34 @@ const collections = [
   // },
 ];
 
+const testimonialsData = [
+  {
+    name: "Govind Agrawal",
+    title: "CEO of Shree Agrawal Stones Co.",
+    imageUrl: "",
+    review:
+      "Our natural stones are of the highest quality and our team provides exceptional service. We highly recommend this company for all your natural stone needs.",
+  },
+  {
+    name: "Prateek Pareekh",
+    title: "CEO of Design Co.",
+    imageUrl: awsBaseUrlFree + "/assets/prateek-pareekh.jpg",
+    review: "Visit their showroom to see the natural stones in person and get inspired for your next project.",
+  },
+  {
+    name: "Manoj Agrawal",
+    title: "CEO of agrawalstones",
+    imageUrl: "",
+    review:
+      "With a vast selection of natural stones, we offer competitive prices and exceptional customer service to ensure your satisfaction.",
+  },
+];
+
 const products = [
   {
     model: "AGI-KOBL",
     name: "Kota Blue Natural",
-    category: "Limestone",
+    category: "Limestone - Slabs",
     size: "Customized",
     thickness: "Customized",
     description:
@@ -198,4 +221,4 @@ const products = [
   },
 ];
 
-export { contacts, addresses, collections, products, awsBaseUrlFree };
+export { contacts, addresses, collections, products, awsBaseUrlFree, testimonialsData };

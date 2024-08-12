@@ -15,11 +15,13 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-between font-medium lg:px-24 sm:px-16 px-10 sm:py-4 py-2 items-center bg-neutral-100">
+      <nav className="flex justify-between font-medium lg:px-24 px-8 sm:py-4 py-2 items-center bg-neutral-100">
         {/* Left */}
         <div className="flex gap-6">
           {/* Logo */}
-          <Image src="/assets/logo.svg" alt="logo" width={30} height={30} />
+          <Link href="/">
+            <Image src="/assets/logo.svg" alt="logo" width={30} height={30} />
+          </Link>
 
           {/* Menu */}
           <ul className="md:flex hidden gap-4 items-center text-neutral-500">

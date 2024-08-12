@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero3() {
   return (
-    <section className=" relative md:pb-36 pb-14 flex lg:flex-row flex-col md:px-24 px-16 py-8 gap-12 items-center justify-center bg-neutral-100">
+    <section className=" relative md:pb-36 pb-14 flex lg:flex-row flex-col md:px-24 px-10 py-8 gap-12 items-center justify-center bg-neutral-100">
       <Image
         src="/assets/services-collage.png"
         width={1000}

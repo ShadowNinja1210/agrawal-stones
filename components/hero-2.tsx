@@ -6,7 +6,7 @@ import { awsBaseUrlFree } from "@/public/assets/data";
 
 export default function Hero2() {
   return (
-    <section className="flex lg:flex-row flex-col md:px-24 py-10 px-16 bg-white gap-6 items-center justify-center">
+    <section className="flex lg:flex-row flex-col md:px-24 py-10 px-10 bg-white gap-6 items-center justify-center">
       <div className="space-y-4">
         <div className=" space-y-2">
           <h1 className={`${cormorantGaramond.className} leading-tight md:text-7xl text-5xl `}>
@@ -23,15 +23,15 @@ export default function Hero2() {
 
         <div className="flex flex-col gap-4">
           <div>
-            <Link href="/services">
+            <Link href="/custom">
               <Button size="lg" className="text-lg">
-                Check Our Services
+                Customize your product
               </Button>
             </Link>
           </div>
           <div>
             <Button size="lg" variant="outline" className="text-lg">
-              <a href={awsBaseUrlFree + "/assets/agrawal-stones.pdf"} download="agrawal-stones">
+              <a href={awsBaseUrlFree + "/assets/agrawal-stones.pdf"} download="agrawal-stones" target="blank">
                 Our Catalog
               </a>
             </Button>
