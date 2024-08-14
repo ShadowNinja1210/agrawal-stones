@@ -4,7 +4,7 @@ import { cormorantGaramond } from "@/lib/direct-font";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { awsBaseUrlFree, testimonialsData } from "@/public/assets/data";
 

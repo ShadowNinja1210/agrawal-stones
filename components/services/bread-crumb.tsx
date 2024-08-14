@@ -12,9 +12,12 @@ import { Fragment } from "react";
 export default function CustomBreadCrumb({ list }: { list: string[] }) {
   return (
     <Breadcrumb className="p-2">
-      <BreadcrumbList>
+      <BreadcrumbList className="text-lg">
         {list.map((item, index) => {
-          const itemName = ReverseKebab(item);
+          var itemName = ReverseKebab(item);
+          if (itemName === "Cnc Work") {
+            itemName = "CNC Work";
+          }
           const itemUrl =
             index === 1
               ? "/" + item
@@ -29,7 +32,9 @@ export default function CustomBreadCrumb({ list }: { list: string[] }) {
             (index === list.length - 1 ? (
               <Fragment key={index}>
                 <BreadcrumbItem>
-                  <BreadcrumbPage>{itemName}</BreadcrumbPage>
+                  <BreadcrumbPage className="text-primary-2">
+                    <strong>{itemName}</strong>
+                  </BreadcrumbPage>
                 </BreadcrumbItem>
               </Fragment>
             ) : (

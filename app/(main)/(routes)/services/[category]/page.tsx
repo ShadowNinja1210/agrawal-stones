@@ -1,6 +1,6 @@
 "use client";
 
-import CustomBreadCrumb from "@/components/bread-crumb";
+import CustomBreadCrumb from "@/components/services/bread-crumb";
 import _ from "lodash";
 import { usePathname } from "next/navigation";
 import { collections } from "@/public/assets/data";
@@ -8,11 +8,22 @@ import { cn } from "@/lib/utils";
 import ServicesCard from "@/components/services/services-card";
 import { cormorantGaramond } from "@/lib/direct-font";
 import { ReverseKebab } from "@/lib/function-store";
+import useStateStore from "@/lib/state-store";
+import { useEffect } from "react";
 
 export default function ServicesCategory() {
   const path = usePathname();
   const list = path?.split("/");
-  const categoryName = ReverseKebab(list?.[2] ?? "");
+  let categoryName = ReverseKebab(list?.[2] ?? "");
+  if (categoryName === "Cnc Work") {
+    categoryName = "CNC Work";
+  }
+  console.log(categoryName);
+  const { setServicesTitle } = useStateStore();
+  useEffect(() => {
+    setServicesTitle(categoryName);
+  }, []);
+
   const subCategories = collections
     .map((collection) => collection.categories.filter((category) => category.name === categoryName))
     .flat()[0].subCategories;

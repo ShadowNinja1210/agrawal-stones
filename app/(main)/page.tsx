@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
 
-import Commitment from "@/components/commitment";
-import Hero from "@/components/hero";
-import Hero2 from "@/components/hero-2";
-import Hero3 from "@/components/hero-3";
-import Stones from "@/components/stones";
-import Testimonials from "@/components/testimonials";
+import Commitment from "@/components/home/commitment";
+import Hero from "@/components/home/hero";
+import Hero2 from "@/components/home/hero-2";
+import Hero3 from "@/components/home/hero-3";
+import Stones from "@/components/home/stones";
+import Testimonials from "@/components/home/testimonials";
 import MainLoader from "@/components/loaders/main-loader";
 import useStateStore from "@/lib/state-store";
-import CustomPage from "@/components/custom";
+import CustomPage from "@/components/home/custom";
 
 export default function Home() {
   const { isLoading, setIsLoading } = useStateStore();

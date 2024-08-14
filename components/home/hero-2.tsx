@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { cormorantGaramond } from "@/lib/direct-font";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { awsBaseUrlFree } from "@/public/assets/data";
 
