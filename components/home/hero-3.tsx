@@ -2,12 +2,13 @@ import { cormorantGaramond } from "@/lib/direct-font";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { awsBaseUrlFree } from "@/public/assets/data";
 
 export default function Hero3() {
   return (
     <section className=" relative md:pb-36 pb-14 flex lg:flex-row flex-col md:px-24 px-10 py-8 gap-12 items-center justify-center bg-neutral-100">
       <Image
-        src="/assets/services-collage.png"
+        src={awsBaseUrlFree + "/assets/services-collage.png"}
         width={1000}
         height={1000}
         alt="Services collage"
@@ -38,7 +39,7 @@ export default function Hero3() {
       </div>
 
       <Image
-        src="/assets/services-design.svg"
+        src={awsBaseUrlFree + "/assets/services-design.svg"}
         width={1000}
         height={1000}
         className="w-screen absolute -bottom-1 opacity-80"

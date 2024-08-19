@@ -66,7 +66,7 @@ export default function Stones() {
       </div>
 
       <Image
-        src="/assets/stones-design.svg"
+        src={awsBaseUrlFree + "/assets/stones-design.svg"}
         width={1000}
         height={1000}
         className="w-screen z-0 absolute bottom-0 opacity-80"

@@ -5,6 +5,9 @@ import _ from "lodash";
 import { usePathname } from "next/navigation";
 import { collections } from "@/public/assets/data";
 import { cn } from "@/lib/utils";
+import dynamic from "next/dynamic";
+
+// const ServicesCard = dynamic(() => import("@/components/services/services-card"));
 import ServicesCard from "@/components/services/services-card";
 import { cormorantGaramond } from "@/lib/direct-font";
 import { ReverseKebab } from "@/lib/function-store";

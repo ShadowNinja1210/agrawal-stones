@@ -3,12 +3,13 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { awsBaseUrlFree } from "@/public/assets/data";
 
 export default function CustomPage() {
   return (
     <section className=" bg-[#D00101] md:px-24 pt-6 py-10 px-10 w-full text-white flex justify-between gap-10 flex-wrap items-center">
       <Image
-        src="/assets/custom-design.svg"
+        src={awsBaseUrlFree + "/assets/custom-design.svg"}
         width={1000}
         height={1000}
         alt="Custom Orders"

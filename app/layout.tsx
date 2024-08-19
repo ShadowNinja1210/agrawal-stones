@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { HydrationOverlay } from "@builder.io/react-hydration-overlay";
 
 import { questrial } from "@/lib/direct-font";
 import "./globals.css";
@@ -16,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <HydrationOverlay>
-        <body className={questrial.className}>{children}</body>
-      </HydrationOverlay>
+      <body className={questrial.className}>{children}</body>
     </html>
   );
 }

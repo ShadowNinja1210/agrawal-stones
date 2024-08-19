@@ -47,7 +47,13 @@ export default function Hero2() {
         className="w-full max-w-screen-md lg:block hidden"
       />
 
-      <Image src="/assets/single-1.png" alt="collage" width={500} height={500} className=" lg:hidden w-full md:px-10" />
+      <Image
+        src={awsBaseUrlFree + "/assets/single-1.png"}
+        alt="collage"
+        width={500}
+        height={500}
+        className=" lg:hidden w-full md:px-10"
+      />
     </section>
   );
 }

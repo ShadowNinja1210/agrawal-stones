@@ -13,6 +13,7 @@ export default function ServicesCard({ category }: { category: { name: string; i
   const categoryKebab = _.kebabCase(category.name);
 
   const categoryUrl = "/services/" + categoryName + "/" + categoryKebab;
+
   return (
     <Link href={categoryUrl} className={" bg-neutral-100 max-w-80 overflow-hidden rounded-t-xl "}>
       <div className="overflow-hidden">

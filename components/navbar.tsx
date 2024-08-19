@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { awsBaseUrlFree } from "@/public/assets/data";
 
 export const Navbar = () => {
   const url = usePathname();
@@ -20,7 +21,7 @@ export const Navbar = () => {
       <div className="flex gap-6">
         {/* Logo */}
         <Link href="/">
-          <Image src="/assets/logo.svg" alt="logo" width={30} height={30} />
+          <Image src={awsBaseUrlFree + "/assets/logo.svg"} alt="logo" width={30} height={30} />
         </Link>
 
         {/* Menu */}

@@ -7,5 +7,4 @@ export type productsData = {
   description: string;
   mainImg: string;
   images: string[];
-  packaging: string;
 };

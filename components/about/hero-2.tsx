@@ -1,10 +1,11 @@
+import { awsBaseUrlFree } from "@/public/assets/data";
 import Image from "next/image";
 
 export default function AboutHero2() {
   return (
     <section className="md:px-24 lg:flex block justify-between sm:px-16 px-10 py-6">
       <Image
-        src="/assets/about-stone.png"
+        src={awsBaseUrlFree + "/assets/about-stone.png"}
         className="w-[250px] h-[388px] lg:float-none float-left mb-4 mr-4"
         alt="Agrawal Stones"
         width={300}

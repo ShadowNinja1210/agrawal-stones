@@ -1,11 +1,12 @@
 import { cormorantGaramond } from "@/lib/direct-font";
+import { awsBaseUrlFree } from "@/public/assets/data";
 import Image from "next/image";
 
 export default function AboutHero() {
   return (
     <section className=" md:px-24 relative px-16 py-6">
       <Image
-        src="/assets/stone-background.jpg"
+        src={awsBaseUrlFree + "/assets/stone-background.jpg"}
         alt="Stone Background"
         fill
         objectFit="cover"

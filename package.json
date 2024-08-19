@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@builder.io/react-hydration-overlay": "^0.1.0",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
