@@ -64,7 +64,7 @@ export default function SearchModal() {
   const isSearchModalOpen = type === "Search" && isOpen;
   return (
     <Dialog open={isSearchModalOpen} onOpenChange={redefinedOnClose}>
-      <DialogContent className="h-[calc(100vh-10%)] sm:p-6 p-4 flex flex-col max-h-[108px]">
+      <DialogContent className="h-[calc(100vh-10%)] sm:p-6 p-4 flex flex-col">
         <Input placeholder="Search..." onChange={(e) => setSearchTerm(e.target.value)} className="w-full" />
         {searchedStones.length <= 0 ? (
           // No stones found
@@ -72,7 +72,7 @@ export default function SearchModal() {
             <p className="text-center">No stones found.</p>
           </div>
         ) : (
-          <div className=" grid grid-cols-2 gap-2 justify-between h-full overflow-y-scroll">
+          <div className="grid grid-cols-2 gap-3 overflow-y-scroll p-2">
             {searchedStones.map((stone) => {
               // Category of the stone in lower case
               const category = stone.category.toLowerCase();
@@ -102,7 +102,7 @@ export default function SearchModal() {
                   href={stoneLink}
                   key={stone.model}
                   onClick={redefinedOnClose}
-                  className="flex gap-2 p-2 w-56 bg-neutral-100 rounded-lg items-center"
+                  className="flex gap-2 p-2 w-[220] bg-neutral-100 rounded-lg items-center max-h-[108px] hover:shadow-md hover:scale-105 transition-all"
                 >
                   <Image src={stone.mainImg} alt={stone.name} width={100} height={100} className="max-h-16" />
                   <div className="flex flex-col">
