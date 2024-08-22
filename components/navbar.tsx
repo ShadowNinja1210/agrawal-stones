@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { awsBaseUrlFree } from "@/public/assets/data";
+import SearchButton from "./search-button";
 
 export const Navbar = () => {
   const url = usePathname();
@@ -44,9 +45,7 @@ export const Navbar = () => {
       {/* Right */}
       <div className="flex gap-6 items-center">
         {/* Search */}
-        <button className=" p-2 rounded-full bg-neutral-200 hover:bg-neutral-300 active:bg-neutral-400">
-          <Search />
-        </button>
+        <SearchButton className="" />
 
         {/* Contact Number */}
         <Link className=" hidden md:flex gap-2" href="tel:+919929812181">

@@ -11,8 +11,8 @@ import { Fragment } from "react";
 
 export default function CustomBreadCrumb({ list }: { list: string[] }) {
   return (
-    <Breadcrumb className="p-2">
-      <BreadcrumbList className="text-lg">
+    <Breadcrumb className="sm:p-2 py-2">
+      <BreadcrumbList className="sm:text-lg text-base">
         {list.map((item, index) => {
           var itemName = ReverseKebab(item);
           if (itemName === "Cnc Work") {

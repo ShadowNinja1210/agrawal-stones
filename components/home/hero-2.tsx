@@ -10,7 +10,7 @@ export default function Hero2() {
       <div className="space-y-4">
         <div className=" space-y-2">
           <h1 className={`${cormorantGaramond.className} leading-tight md:text-7xl text-5xl `}>
-            Custome. Design. <br />
+            Custom. Design. <br />
             Embrace.
           </h1>
           <p className=" sm:text-lg leading-6">

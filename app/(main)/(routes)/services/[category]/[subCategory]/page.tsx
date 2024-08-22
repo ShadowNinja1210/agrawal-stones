@@ -6,6 +6,7 @@ import { ReverseKebab } from "@/lib/function-store";
 import useStateStore from "@/lib/state-store";
 import { productsData } from "@/lib/types";
 import { products } from "@/public/assets/data";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 

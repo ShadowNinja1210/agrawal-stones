@@ -1,8 +1,9 @@
 "use client";
 
 // Import dependencies
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { format } from "date-fns";
+import { useSearchParams } from "next/navigation";
 
 // Import UI components
 import { Button } from "@/components/ui/button";
@@ -23,11 +24,20 @@ const formSchema = z.object({
   email: z.string().email("Enter valid email address").optional(),
   contact: z.number().min(10, "Enter valid contact number"),
   message: z.string().min(30, "Message must be at least 30 characters"),
+  stone: z.string().optional(),
 });
 
 export default function ContactForm() {
   // Define state variables
   const [messageInputLength, setMessageInputLength] = useState(0); // Message input (Using it for the character count)
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const stoneParam = searchParams?.get("stone");
+    if (stoneParam) {
+      form.setValue("stone", stoneParam);
+    }
+  }, []);
 
   // Submit form function
   const submitForm = async (data: z.infer<typeof formSchema>) => {
@@ -107,6 +117,21 @@ export default function ContactForm() {
               <FormLabel>Email Address</FormLabel>
               <FormControl>
                 <Input {...field} type="email" placeholder="Enter your email address" />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        {/* Enquiry Subject */}
+        <FormField
+          control={form.control}
+          name="stone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Enquiry Subject</FormLabel>
+              <FormControl>
+                <Input {...field} placeholder="Enter the subject like enquiry for stone" />
               </FormControl>
               <FormMessage />
             </FormItem>
