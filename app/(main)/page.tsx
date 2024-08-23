@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import Commitment from "@/components/home/commitment";
 import Hero from "@/components/home/hero";
@@ -16,7 +16,7 @@ export default function Home() {
   const loaderTimeout = () => {
     const timeoutId = setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 750);
 
     return () => {
       clearTimeout(timeoutId);

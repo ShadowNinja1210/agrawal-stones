@@ -30,7 +30,7 @@ export default function CustomPage() {
         </div>
         <hr className="w-full" />
         <div>
-          <Link href="/custom">
+          <Link href="/customize">
             <Button size="lg" className="text-lg text-primary-2 bg-white hover:bg-neutral-100">
               Customize your product
             </Button>

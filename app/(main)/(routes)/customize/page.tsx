@@ -1,4 +1,4 @@
-import CustomHero from "@/components/custom/hero";
+import CustomHero from "@/components/customize/hero";
 
 export default function CustomPage() {
   return (

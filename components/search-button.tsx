@@ -13,7 +13,7 @@ export default function SearchButton({ className }: { className?: string }) {
 
   return (
     <button
-      className={cn(" p-2 rounded-full bg-neutral-200 hover:bg-neutral-300 active:bg-neutral-400", className)}
+      className={cn("p-2 rounded-full bg-neutral-200 hover:bg-neutral-300 active:bg-neutral-400", className)}
       onClick={searchToggle}
     >
       <Search />

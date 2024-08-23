@@ -36,8 +36,8 @@ export const Navbar = () => {
           <li className={`${page === "about" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
             <Link href="/about">About us</Link>
           </li>
-          <li className={`${page === "contact" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
-            <Link href="/contact">Contact us</Link>
+          <li className={`${page === "customize" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
+            <Link href="/customize">Customize</Link>
           </li>
         </ul>
       </div>

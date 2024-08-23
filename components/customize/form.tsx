@@ -31,7 +31,6 @@ const formSchema = z.object({
 export default function CustomForm() {
   // Define state variables
   const [messageInputLength, setMessageInputLength] = useState(0); // Message input (Using it for the character count)
-  const searchParams = useSearchParams();
 
   // Submit form function
   const submitForm = async (data: z.infer<typeof formSchema>) => {
@@ -64,6 +63,23 @@ export default function CustomForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(submitForm)} className="flex flex-col gap-4 max-w-[500px]">
+        {/* Image Upload Zone */}
+        <FormField
+          control={form.control}
+          name="designUrl"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <FileUpload value={field.value} onChange={field.onChange} />
+              </FormControl>
+              <FormDescription className={`text-right items-center flex justify-end`}>
+                <strong>PDF or Image size should be less than 8MB</strong>
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
         {/* Name */}
         <FormField
           control={form.control}
@@ -146,26 +162,6 @@ export default function CustomForm() {
                 } `}
               >
                 <strong>{messageInputLength < 30 ? `${messageInputLength} / 30` : <Check size={20} />}</strong>
-              </FormDescription>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        {/* Image Upload Zone */}
-        <FormField
-          control={form.control}
-          name="designUrl"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>
-                Upload Design <span className="text-red-500 text-lg">*</span>
-              </FormLabel>
-              <FormControl>
-                <FileUpload value={field.value} onChange={field.onChange} />
-              </FormControl>
-              <FormDescription className={`text-right items-center flex justify-end`}>
-                <strong>PDF or Image size should be less than 8MB</strong>
               </FormDescription>
               <FormMessage />
             </FormItem>

@@ -23,7 +23,7 @@ export default function Hero2() {
 
         <div className="flex flex-col gap-4">
           <div>
-            <Link href="/custom">
+            <Link href="/customize">
               <Button size="lg" className="text-lg">
                 Customize your product
               </Button>
@@ -31,7 +31,12 @@ export default function Hero2() {
           </div>
           <div>
             <Button size="lg" variant="outline" className="text-lg">
-              <a href={awsBaseUrlFree + "/assets/agrawal-stones.pdf"} download="agrawal-stones" target="blank">
+              <a
+                href={awsBaseUrlFree + "/assets/agrawal-stones.pdf"}
+                download="agrawal-stones"
+                target="blank"
+                data-prevent-nprogress={true}
+              >
                 Our Catalog
               </a>
             </Button>
