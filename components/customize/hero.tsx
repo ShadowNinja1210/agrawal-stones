@@ -8,8 +8,14 @@ export default function CustomHero() {
   return (
     <main className="container p-10 flex md:flex-nowrap gap-10 w-screen md:justify-around">
       {/* Left Side */}
-      <section className="flex flex-col gap-10">
-        <Image src="/assets/customize.png" alt="Customize your product" width={350} height={350} />
+      <section className="flex flex-col gap-10 items-center ">
+        <Image
+          src="/assets/customize.png"
+          className="p-16 pb-2"
+          alt="Customize your product"
+          width={500}
+          height={500}
+        />
 
         <div className="space-y-4 max-w-[550px]">
           <h1
