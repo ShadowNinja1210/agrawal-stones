@@ -25,9 +25,9 @@ export default function CustomHero() {
           </h1>
           <p className="sm:text-lg leading-6 ">
             Elevate your space with personalized stone creations. Explore our catalog of meticulously designed stone
-            products or customize your own to reflect your style. Whether it's for your home, office, or any project,
-            our custom stone solutions are crafted to meet your exact specifications. Let your imagination shape the
-            natural beauty of stone into a true work of art.
+            products or customize your own to reflect your style. Whether it&apos;s for your home, office, or any
+            project, our custom stone solutions are crafted to meet your exact specifications. Let your imagination
+            shape the natural beauty of stone into a true work of art.
           </p>
         </div>
       </section>
