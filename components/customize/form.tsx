@@ -38,7 +38,7 @@ export default function CustomForm() {
       // Today's Date
       const date = format(new Date(), "PP");
       // Enquiry Message to be sent
-      const message = `Customer Enquiry ${date} \nName: ${data.name}\nContact: ${data.contact}\nEmail: ${data.email}\nMessage: ${data.message}`;
+      const message = `!!!Customize Design ${date} \nName: ${data.name}\nContact: ${data.contact}\nEmail: ${data.email}\nMessage: ${data.message}\nDesign: ${data.designUrl}`;
 
       // Send message to WhatsApp API
       const response = await fetch("/api/whatsapp", {
