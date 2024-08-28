@@ -51,13 +51,13 @@ export default function SearchModal() {
     const filteredProducts = products.filter((product) =>
       searchedWords.some(
         (word) =>
-          product.name.toLowerCase().includes(word) ||
+          (product.name && product.name.toLowerCase().includes(word)) ||
           product.model.toLowerCase().includes(word) ||
           product.category.toLowerCase().includes(word)
       )
     );
 
-    setSearchedStones(filteredProducts);
+    setSearchedStones(filteredProducts as productsData[]);
   };
 
   const { isOpen, onClose, type } = useStateStore();
