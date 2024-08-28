@@ -50,20 +50,16 @@ const collections = [
     categories: [
       {
         name: "Handmade Modern Artifact",
-        imgUrl: awsBaseUrlFree + "/assets/categories/sensational_collection-kota_blue.png",
-        subCategories: [
-          { name: "Marble", imgUrl: "" },
-          { name: "Sandstone", imgUrl: "" },
-          { name: "Agra Red", imgUrl: "" },
-        ],
+        imgUrl: awsBaseUrlFree + "/assets/categories/artifacts/artifact-1.JPG",
+        subCategories: [],
       },
       {
         name: "CNC Work",
-        imgUrl: "",
+        imgUrl: "/assets/categories/cnc/3d-2d/3d_2d-1.PNG",
         subCategories: [
-          { name: "Jaali Work", imgUrl: "" },
-          { name: "Custom Work", imgUrl: "" },
-          { name: "3D/2D Work", imgUrl: "" },
+          { name: "Jaali Work", imgUrl: awsBaseUrlFree + "/assets/categories/cnc/jaali/jaali-1.png" },
+          { name: "3D/2D Work", imgUrl: awsBaseUrlFree + "/assets/categories/cnc/3d-2d/3d_2d-1.PNG" },
+          { name: "Custom Work", imgUrl: awsBaseUrlFree + "/assets/custom-icon.png" },
         ],
       },
     ],
@@ -76,7 +72,10 @@ const collections = [
         imgUrl: awsBaseUrlFree + "/assets/categories/Sand+Stone/sandstone-raj_green-2.png",
         subCategories: [
           { name: "Slabs", imgUrl: awsBaseUrlFree + "/assets/categories/Sand+Stone/sandstone-raj_green-2.png" },
-          { name: "Wall Cladding", imgUrl: "" },
+          {
+            name: "Wall Cladding",
+            imgUrl: awsBaseUrlFree + "/assets/categories/Sand+Stone/wall_cladding-sandstone-1.jpg",
+          },
         ],
       },
       {
@@ -84,15 +83,18 @@ const collections = [
         imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-blue-2.png",
         subCategories: [
           { name: "Slabs", imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-blue-2.png" },
-          { name: "Wall Cladding", imgUrl: "" },
+          {
+            name: "Wall Cladding",
+            imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-wall_cladding-1.jpg",
+          },
         ],
       },
       {
         name: "Basalt",
-        imgUrl: awsBaseUrlFree + "/assets/categories/sensational_collection-kota_blue.png",
+        imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png",
         subCategories: [
-          { name: "Slabs", imgUrl: "" },
-          { name: "Wall Cladding", imgUrl: "" },
+          { name: "Slabs", imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-slab.jpg" },
+          { name: "Wall Cladding", imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png" },
         ],
       },
     ],
@@ -104,6 +106,294 @@ const collections = [
 // ****************************************************************************
 
 const products = [
+  // ----------------------
+  // Artifacts
+  // ----------------------
+  {
+    model: "AGI-HM01",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-1.jpg",
+  },
+  {
+    model: "AGI-HM02",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-2.jpg",
+  },
+  {
+    model: "AGI-HM03",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-3.jpg",
+  },
+  {
+    model: "AGI-HM04",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-4.jpg",
+  },
+  {
+    model: "AGI-HM05",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-5.jpg",
+  },
+  {
+    model: "AGI-HM06",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-6.jpg",
+  },
+  {
+    model: "AGI-HM07",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-7.jpg",
+  },
+  {
+    model: "AGI-HM08",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-8.jpg",
+  },
+  {
+    model: "AGI-HM10",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-10.jpg",
+  },
+  {
+    model: "AGI-HM11",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-11.jpg",
+  },
+  {
+    model: "AGI-HM12",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-12.jpg",
+  },
+  {
+    model: "AGI-HM13",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-13.jpg",
+  },
+  {
+    model: "AGI-HM14",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-14.jpg",
+  },
+  {
+    model: "AGI-HM15",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-15.jpg",
+  },
+  {
+    model: "AGI-HM16",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-16.jpg",
+  },
+  {
+    model: "AGI-HM17",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-17.jpg",
+  },
+  {
+    model: "AGI-HM18",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-18.jpg",
+  },
+  {
+    model: "AGI-HM19",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-19.jpg",
+  },
+  {
+    model: "AGI-HM20",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-20.jpg",
+  },
+  {
+    model: "AGI-HM21",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-21.jpg",
+  },
+  {
+    model: "AGI-HM22",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-22.jpg",
+  },
+  {
+    model: "AGI-HM23",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-23.jpg",
+  },
+  {
+    model: "AGI-HM24",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-24.jpg",
+  },
+  {
+    model: "AGI-HM25",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-25.jpg",
+  },
+  {
+    model: "AGI-HM26",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-26.jpg",
+  },
+  {
+    model: "AGI-HM27",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-27.jpg",
+  },
+  {
+    model: "AGI-HM28",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-28.jpg",
+  },
+  {
+    model: "AGI-HM29",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-29.jpg",
+  },
+  {
+    model: "AGI-HM30",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-30.jpg",
+  },
+  {
+    model: "AGI-HM31",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-31.jpg",
+  },
+  {
+    model: "AGI-HM32",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-32.jpg",
+  },
+  {
+    model: "AGI-HM33",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-33.jpg",
+  },
+  {
+    model: "AGI-HM34",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-34.jpg",
+  },
+  {
+    model: "AGI-HM35",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-35.jpg",
+  },
+  {
+    model: "AGI-HM36",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-36.jpg",
+  },
+  {
+    model: "AGI-HM37",
+    category: "Handmade Modern Artifact",
+    src: "/assets/categories/artifacts/artifact-37.jpg",
+  },
+
+  // ----------------------
+  // Jaali Work
+  // ----------------------
+  {
+    model: "AGI-CNCJ",
+    category: "CNC Work",
+    src: "/assets/categories/cnc/jaali/jaali-1.png",
+  },
+
+  // ----------------------
+  // 3D/2D Work
+  // ----------------------
+  {
+    model: "AGI-32D1",
+    category: "3D/2D Work",
+    src: "/assets/categories/cnc/3d-2d/3d_2d-1.PNG",
+  },
+  {
+    model: "AGI-32D2",
+    category: "3D/2D Work",
+    src: "/assets/categories/cnc/3d-2d/3d_2d-2.PNG",
+  },
+  {
+    model: "AGI-32D3",
+    category: "3D/2D Work",
+    src: "/assets/categories/cnc/3d-2d/3d_2d-3.PNG",
+  },
+  {
+    model: "AGI-32D4",
+    category: "3D/2D Work",
+    src: "/assets/categories/cnc/3d-2d/3d_2d-4.PNG",
+  },
+  {
+    model: "AGI-32D5",
+    category: "3D/2D Work",
+    src: "/assets/categories/cnc/3d-2d/3d_2d-5.PNG",
+  },
+
+  // ----------------------
+  // Sandstone Wall Cladding
+  // ----------------------
+  {
+    model: "AGI-SWCL",
+    name: "Sandstone Wall Cladding",
+    category: "Sandstone Wall Cladding",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Sandstone Wall Cladding offers a natural and rustic aesthetic, making it an ideal choice for both interior and exterior applications. This material is known for its durability and timeless beauty, adding texture and warmth to any space. Sandstone is versatile and can be cut into different sizes and shapes to suit your design preferences, ensuring a perfect fit for any project.",
+    mainImg: awsBaseUrlFree + "/assets/categories/Sand+Stone/wall_cladding-sandstone-1.jpg",
+    images: [
+      awsBaseUrlFree + "/assets/categories/Sand+Stone/wall_cladding-sandstone-1.jpg",
+      awsBaseUrlFree + "/assets/categories/Sand+Stone/wall_cladding-sandstone-2.png",
+    ],
+  },
+
+  // ----------------------
+  // Kota Stone Wall Cladding
+  // ----------------------
+  {
+    model: "AGI-KWCL",
+    name: "Kota Stone Wall Cladding",
+    category: "Kota Stone Wall Cladding",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Kota Stone Wall Cladding provides a robust and elegant finish for both interior and exterior spaces. Known for its durability and resistance to water and stains, Kota stone is a preferred material for wall cladding in various architectural applications. The natural tones of this stone bring a touch of sophistication while ensuring low maintenance and long-lasting performance.",
+    mainImg: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-wall_cladding-1.jpg",
+    images: [awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-wall_cladding-1.jpg"],
+  },
+
+  // ----------------------
+  // Basalt Slabs
+  // ----------------------
+  {
+    model: "AGI-BSSL",
+    name: "Basalt Slabs",
+    category: "Basalt Slabs",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Basalt Slabs are renowned for their strength and durability, making them an excellent choice for both interior and exterior applications. Basalt stone is a dense and fine-grained volcanic rock that offers a sleek and sophisticated appearance. Its natural dark tone adds elegance and modernity to any space, whether used in flooring, countertops, or wall cladding. Basalt slabs are also resistant to wear and tear, ensuring long-lasting performance with minimal maintenance.",
+    mainImg: awsBaseUrlFree + "/assets/categories/basalt/basalt-slab.jpg",
+    images: [awsBaseUrlFree + "/assets/categories/basalt/basalt-slab.jpg"],
+  },
+
+  // ----------------------
+  // Basalt Wall Cladding
+  // ----------------------
+  {
+    model: "AGI-BWCL",
+    name: "Basalt Wall Cladding",
+    category: "Basalt Wall Cladding",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Basalt Wall Cladding brings a sophisticated and modern touch to any building's exterior or interior. Basalt stone is known for its hardwearing properties and resistance to environmental elements, making it an ideal material for cladding. The natural dark color of Basalt adds depth and contrast, creating a striking visual effect that enhances the overall aesthetics of the structure. Its versatility allows it to be cut and shaped to meet specific design requirements.",
+    mainImg: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png",
+    images: [awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png"],
+  },
+
+  // ----------------------
+  // Kota Stone Slabs
+  // ----------------------
   {
     model: "AGI-KOBL",
     name: "Kota Blue Natural",
@@ -146,6 +436,10 @@ const products = [
       awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-black-2.png",
     ],
   },
+
+  // ----------------------
+  // Sandstone Slabs
+  // ----------------------
   {
     model: "AGI-KDGR",
     name: "Kandla Grey Natural",

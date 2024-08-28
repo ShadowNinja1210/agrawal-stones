@@ -44,18 +44,14 @@ export default function MainFooter() {
             </div>
 
             {/* Contact */}
-            <div>
-              <p className="flex flex-col">
+            <div className="flex flex-wrap gap-8">
+              {/* First Contact */}
+              <div className="flex flex-col">
+                <h4 className="font-semibold">{contacts[0].name}</h4>
                 <span className="flex gap-2">
                   <Phone className=" w-4" />
                   <a href={`tel:+91${contacts[0].contact}`} className=" hover:text-white/80">
                     +91 {contacts[0].contact.toString().slice(0, 5)}-{contacts[0].contact.toString().slice(5)}
-                  </a>
-                </span>
-                <span className="flex gap-2">
-                  <Phone className=" w-4" />
-                  <a href={`tel:+91${contacts[1].contact}`} className=" hover:text-white/80">
-                    +91 {contacts[1].contact.toString().slice(0, 5)}-{contacts[1].contact.toString().slice(5)}
                   </a>
                 </span>
                 <span className="flex gap-2">
@@ -64,7 +60,17 @@ export default function MainFooter() {
                     {contacts[2].contact}
                   </a>
                 </span>
-              </p>
+              </div>
+              {/* First Contact */}
+              <div className="flex flex-col">
+                <h4 className="font-semibold">{contacts[1].name}</h4>
+                <span className="flex gap-2">
+                  <Phone className=" w-4" />
+                  <a href={`tel:+91${contacts[1].contact}`} className=" hover:text-white/80">
+                    +91 {contacts[1].contact.toString().slice(0, 5)}-{contacts[1].contact.toString().slice(5)}
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>

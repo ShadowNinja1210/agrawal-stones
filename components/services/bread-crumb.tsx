@@ -17,6 +17,8 @@ export default function CustomBreadCrumb({ list }: { list: string[] }) {
           var itemName = ReverseKebab(item);
           if (itemName === "Cnc Work") {
             itemName = "CNC Work";
+          } else if (itemName === "3 D 2 D Work") {
+            itemName = "3D/2D Work";
           }
           const itemUrl =
             index === 1

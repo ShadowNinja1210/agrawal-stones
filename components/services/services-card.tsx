@@ -12,10 +12,12 @@ export default function ServicesCard({ category }: { category: { name: string; i
   const categoryName = list?.[2] ?? "";
   const categoryKebab = _.kebabCase(category.name);
 
-  const categoryUrl = "/services/" + categoryName + "/" + categoryKebab;
-
+  let categoryUrl = "/services/" + categoryName + "/" + categoryKebab;
+  if (category.name === "Custom Work") {
+    categoryUrl = "/customize";
+  }
   return (
-    <Link href={categoryUrl} className={" bg-neutral-100 max-w-80 overflow-hidden rounded-t-xl "}>
+    <Link href={categoryUrl} className={" bg-neutral-100 max-w-80 overflow-hidden rounded-t-xl hover:shadow-lg"}>
       <div className="overflow-hidden">
         <Image
           src={category.imgUrl}

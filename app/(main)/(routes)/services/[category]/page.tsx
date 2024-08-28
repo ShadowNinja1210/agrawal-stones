@@ -3,7 +3,7 @@
 import CustomBreadCrumb from "@/components/services/bread-crumb";
 import _ from "lodash";
 import { usePathname } from "next/navigation";
-import { collections } from "@/public/assets/data";
+import { awsBaseUrlFree, collections, products } from "@/public/assets/data";
 import { cn } from "@/lib/utils";
 import dynamic from "next/dynamic";
 
@@ -13,16 +13,19 @@ import { cormorantGaramond } from "@/lib/direct-font";
 import { ReverseKebab } from "@/lib/function-store";
 import useStateStore from "@/lib/state-store";
 import { useEffect } from "react";
+import ImageCard from "@/components/services/products/image-card";
 
 export default function ServicesCategory() {
   const path = usePathname();
   const list = path?.split("/");
+
   let categoryName = ReverseKebab(list?.[2] ?? "");
   if (categoryName === "Cnc Work") {
     categoryName = "CNC Work";
   }
-  console.log(categoryName);
+
   const { setServicesTitle } = useStateStore();
+  let artifacts;
   useEffect(() => {
     setServicesTitle(categoryName);
   }, []);
@@ -43,9 +46,22 @@ export default function ServicesCategory() {
             <hr className="mt-2" />
           </div>
           <div className="flex justify-around gap-10 flex-wrap">
-            {subCategories.map((subCategory: any, index: number) => (
-              <ServicesCard key={index} category={subCategory} />
-            ))}
+            {list?.[2] === "handmade-modern-artifact"
+              ? products
+                  .filter((item) => item.category === "Handmade Modern Artifact")
+                  .map((product, i) => {
+                    return (
+                      <ImageCard
+                        alt={product.model}
+                        src={awsBaseUrlFree + product.src}
+                        key={product.model}
+                        model={product.model}
+                      />
+                    );
+                  })
+              : subCategories.map((subCategory: any, index: number) => (
+                  <ServicesCard key={index} category={subCategory} />
+                ))}
           </div>
         </div>
       </div>

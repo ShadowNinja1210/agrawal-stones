@@ -12,7 +12,9 @@ export default function ServicesSubCategory() {
   const list = path?.split("/");
   const productName = ReverseKebab(list?.[4] ?? "");
 
-  const productData: productsData | undefined = products.find((item) => item.name === productName);
+  const productData: productsData | undefined = products.find((item) => item.name === productName) as
+    | productsData
+    | undefined;
 
   return (
     <main className="flex flex-col gap-4 lg:items-start items-center">

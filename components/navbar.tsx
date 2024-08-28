@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { awsBaseUrlFree } from "@/public/assets/data";
+import { awsBaseUrlFree, contacts } from "@/public/assets/data";
 import SearchButton from "./search-button";
 
 export const Navbar = () => {
@@ -48,9 +48,9 @@ export const Navbar = () => {
         <SearchButton className="" />
 
         {/* Contact Number */}
-        <Link className=" hidden md:flex gap-2" href="tel:+919929812181">
+        <Link className=" hidden md:flex gap-2" href={`tel:+91${contacts[0].contact}`}>
           <Phone className="h-6 w-6" />
-          +91 99298-12181
+          +91 {contacts[0].contact.toString().slice(0, 5)}-{contacts[0].contact.toString().slice(5)}
         </Link>
 
         {/* Contact Button */}
@@ -74,7 +74,7 @@ export const Navbar = () => {
                   className="group flex h-10 w-10 shrink-0 items-center justify-center rounded-md overflow-hidden gap-2 bg-primary text-lg font-semibold text-primary-foreground md:text-base"
                 >
                   <SheetClose>
-                    <Image src="/assets/logo.svg" alt="logo" width={40} height={40} />
+                    <Image src={awsBaseUrlFree + "/assets/logo.svg"} alt="logo" width={40} height={40} />
                   </SheetClose>
                 </Link>
 
@@ -122,11 +122,11 @@ export const Navbar = () => {
                 {/* Contact Number */}
                 <Link
                   className=" flex gap-4 items-center px-2.5 text-base text-muted-foreground hover:text-foreground"
-                  href="tel:+919929812181"
+                  href={`tel:+91${contacts[0].contact}`}
                 >
                   <SheetClose className="flex items-center gap-4">
                     <Phone className="h-5 w-5" />
-                    +91 99298-12181
+                    +91 {contacts[0].contact.toString().slice(0, 5)}-{contacts[0].contact.toString().slice(5)}
                   </SheetClose>
                 </Link>
               </nav>

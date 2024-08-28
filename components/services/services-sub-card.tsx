@@ -10,8 +10,8 @@ export default function ServicesSubCard({
   category,
   linkOn = false,
 }: {
-  category: { name: string; imgUrl: string };
-  linkOn: boolean;
+  category: { name: string | undefined; imgUrl: string | undefined };
+  linkOn: boolean | undefined;
 }) {
   const path = usePathname();
   const list = path?.split("/");
@@ -25,6 +25,7 @@ export default function ServicesSubCard({
 
   const linkTarget = linkOn ? "_self" : "_blank";
 
+  if (categoryUrl === undefined || category.name === undefined || category.imgUrl === undefined) return null;
   return (
     <Link
       href={categoryUrl}
