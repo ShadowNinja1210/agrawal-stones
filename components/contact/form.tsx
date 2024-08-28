@@ -17,12 +17,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Check } from "lucide-react";
 import { inter } from "@/lib/direct-font";
+import { toast } from "../ui/use-toast";
 
 // Define form schema
 const formSchema = z.object({
   name: z.string().min(3, "Name is too short"),
   email: z.string().email("Enter valid email address").optional(),
-  contact: z.number().min(10, "Enter valid contact number"),
+  contact: z.string().min(10, "Enter valid contact number"),
   message: z.string().min(30, "Message must be at least 30 characters"),
   stone: z.string().optional(),
 });
@@ -56,7 +57,18 @@ export default function ContactForm() {
         },
       });
       console.log(response.status);
+      if (response.status === 200) {
+        form.reset();
+        toast({
+          title: "Message Sent Successfully 🎉",
+          description: "We've received your enquiry. We will get back to you shortly.",
+        });
+      }
     } catch (error) {
+      toast({
+        title: "Message not Sent 😔",
+        description: "Your form submission failed. Please try again.",
+      });
       console.error(error);
     }
   };
@@ -64,6 +76,12 @@ export default function ContactForm() {
   // Define form hook
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      contact: "",
+      message: "",
+    },
   });
 
   // Return the form component
@@ -98,7 +116,8 @@ export default function ContactForm() {
               </FormLabel>
               <FormControl>
                 <Input
-                  onChange={(e) => form.setValue("contact", Number(e.target.value))}
+                  value={field.value}
+                  onChange={(e) => form.setValue("contact", String(e.target.value))}
                   type="number"
                   placeholder="Enter your contact number"
                 />

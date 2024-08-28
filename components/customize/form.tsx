@@ -3,7 +3,7 @@
 // Import dependencies
 import { useState } from "react";
 import { format } from "date-fns";
-import { useSearchParams } from "next/navigation";
+import { useToast } from "@/components/ui/use-toast";
 
 // Import UI components
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,7 @@ import FileUpload from "./file-upload";
 const formSchema = z.object({
   name: z.string().min(3, "Name is too short"),
   email: z.string().email("Enter valid email address").optional(),
-  contact: z.number().min(10, "Enter valid contact number"),
+  contact: z.string().min(10, "Enter valid contact number"),
   message: z.string().min(30, "Message must be at least 30 characters"),
   designUrl: z.string(),
 });
@@ -31,6 +31,7 @@ const formSchema = z.object({
 export default function CustomForm() {
   // Define state variables
   const [messageInputLength, setMessageInputLength] = useState(0); // Message input (Using it for the character count)
+  const { toast } = useToast();
 
   // Submit form function
   const submitForm = async (data: z.infer<typeof formSchema>) => {
@@ -49,7 +50,18 @@ export default function CustomForm() {
         },
       });
       console.log(response.status);
+      if (response.status === 200) {
+        form.reset();
+        toast({
+          title: "Message Sent Successfully 🎉",
+          description: "We've received your enquiry. We will get back to you shortly.",
+        });
+      }
     } catch (error) {
+      toast({
+        title: "Message not Sent 😔",
+        description: "Your form submission failed. Please try again.",
+      });
       console.error(error);
     }
   };
@@ -57,6 +69,12 @@ export default function CustomForm() {
   // Define form hook
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      contact: "",
+      message: "",
+    },
   });
 
   // Return the form component
@@ -90,7 +108,7 @@ export default function CustomForm() {
                 Name <span className="text-red-500 text-lg">*</span>
               </FormLabel>
               <FormControl>
-                <Input {...field} placeholder="Enter your name" />
+                <Input value={field.value} onChange={field.onChange} placeholder="Enter your name" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -108,7 +126,8 @@ export default function CustomForm() {
               </FormLabel>
               <FormControl>
                 <Input
-                  onChange={(e) => form.setValue("contact", Number(e.target.value))}
+                  onChange={(e) => form.setValue("contact", String(e.target.value))}
+                  value={field.value}
                   type="number"
                   placeholder="Enter your contact number"
                 />
@@ -126,7 +145,12 @@ export default function CustomForm() {
             <FormItem>
               <FormLabel>Email Address</FormLabel>
               <FormControl>
-                <Input {...field} type="email" placeholder="Enter your email address" />
+                <Input
+                  value={field.value}
+                  onChange={field.onChange}
+                  type="email"
+                  placeholder="Enter your email address"
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -144,7 +168,7 @@ export default function CustomForm() {
               </FormLabel>
               <FormControl>
                 <Textarea
-                  {...field}
+                  value={field.value}
                   onChange={(e) => {
                     setMessageInputLength(e.target.value.length);
                     form.setValue("message", e.target.value);

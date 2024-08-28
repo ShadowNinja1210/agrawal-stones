@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/toaster";
 
 import { questrial } from "@/lib/direct-font";
 import "./globals.css";
@@ -29,6 +30,7 @@ export default function RootLayout({
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
         {children}
+        <Toaster />
       </body>
     </html>
   );
