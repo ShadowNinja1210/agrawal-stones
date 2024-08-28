@@ -29,14 +29,16 @@ const addresses = [
   {
     id: 1,
     name: "Krishna Udhyog",
-    address: ["G-329, Road number 6, Indraprast Industrial Area,", "Kota, Rajasthan, 324001"],
-    mapUrl: "https://www.google.com/maps/embed/v1/place?q=Bhawani+Mandi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+    address: ["G-329, Road number 6, Indraprasth Industrial Area,", "Kota, Rajasthan, 324001"],
+    mapUrl:
+      "https://www.google.com/maps/embed/v1/place?q=Indraprasth+Industrial+Area&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
   },
   {
     id: 2,
     name: "Shree Agrawal Stone Industry",
     address: ["F-8, RIICO Industrial Area, Bhawani Mandi,", "Jhalawar, Rajasthan, 326502"],
-    mapUrl: "https://www.google.com/maps/embed/v1/place?q=Kota&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+    mapUrl:
+      "https://www.google.com/maps/embed/v1/place?q=Bhawani+Mandi+RICCO&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
   },
 ];
 
@@ -76,6 +78,10 @@ const collections = [
             name: "Wall Cladding",
             imgUrl: awsBaseUrlFree + "/assets/categories/Sand+Stone/wall_cladding-sandstone-1.jpg",
           },
+          {
+            name: "Cobbles",
+            imgUrl: awsBaseUrlFree + "/assets/categories/Sand+Stone/sandstone-cobbles-1.png",
+          },
         ],
       },
       {
@@ -87,6 +93,10 @@ const collections = [
             name: "Wall Cladding",
             imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-wall_cladding-1.jpg",
           },
+          {
+            name: "Cobbles",
+            imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-cobbles-2.png",
+          },
         ],
       },
       {
@@ -94,7 +104,7 @@ const collections = [
         imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png",
         subCategories: [
           { name: "Slabs", imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-slab.jpg" },
-          { name: "Wall Cladding", imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png" },
+          { name: "Wall Cladding", imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-1.png" },
         ],
       },
     ],
@@ -350,6 +360,50 @@ const products = [
   // Kota Stone Wall Cladding
   // ----------------------
   {
+    model: "AGI-SCOB",
+    name: "Sandstone Cobbles",
+    category: "Sandstone Cobbles",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Sandstone Cobbles provide a charming and rustic appeal, perfect for driveways, pathways, and garden landscaping. Known for their natural texture and durability, these cobbles offer a unique blend of aesthetics and functionality. Sandstone is available in various sizes and shapes, making it easy to customize your outdoor spaces to achieve the desired look.",
+    mainImg: awsBaseUrlFree + "/assets/categories/Sand+Stone/sandstone-cobbles-1.png",
+    images: [awsBaseUrlFree + "/assets/categories/Sand+Stone/sandstone-cobbles-1.png"],
+  },
+  {
+    model: "AGI-KCOB",
+    name: "Kota Stone Cobbles",
+    category: "Kota Stone Cobbles",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Kota Stone Cobbles are known for their strength and natural elegance, making them an excellent choice for outdoor paving solutions. These cobbles offer a smooth finish and are highly resistant to wear and tear, making them ideal for heavy traffic areas. Kota Stone Cobbles are available in various sizes and can be customized to suit any design needs.",
+    mainImg: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-cobbles-1.png",
+    images: [
+      awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-cobbles-1.png",
+      awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-cobbles-2.png",
+      awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-cobbles-3.png",
+    ],
+  },
+  {
+    model: "AGI-BCOB",
+    name: "Basalt Cobbles",
+    category: "Basalt Cobbles",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Basalt Cobbles offer a sleek and modern look with their dark, rich tones. Perfect for driveways, patios, and walkways, these cobbles are known for their exceptional strength and durability. Basalt is a volcanic stone that can withstand harsh weather conditions, making it a reliable choice for both residential and commercial projects.",
+    mainImg: awsBaseUrlFree + "/assets/categories/Basalt/basalt-cobbles-1.png",
+    images: [
+      awsBaseUrlFree + "/assets/categories/Basalt/basalt-cobbles-1.png",
+      awsBaseUrlFree + "/assets/categories/Basalt/basalt-cobbles-1.png",
+    ],
+  },
+
+  // ----------------------
+  // Kota Stone Wall Cladding
+  // ----------------------
+  {
     model: "AGI-KWCL",
     name: "Kota Stone Wall Cladding",
     category: "Kota Stone Wall Cladding",
@@ -359,6 +413,38 @@ const products = [
       "Kota Stone Wall Cladding provides a robust and elegant finish for both interior and exterior spaces. Known for its durability and resistance to water and stains, Kota stone is a preferred material for wall cladding in various architectural applications. The natural tones of this stone bring a touch of sophistication while ensuring low maintenance and long-lasting performance.",
     mainImg: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-wall_cladding-1.jpg",
     images: [awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-wall_cladding-1.jpg"],
+  },
+
+  // ----------------------
+  // Kota Stone Checkered
+  // ----------------------
+  {
+    model: "AGI-KWCL",
+    name: "Kota Stone Chess Checkered",
+    category: "Kota Stone Checkered",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Enhance your interiors with the timeless appeal of Kota Stone Checkered patterns. This durable and elegant flooring option combines the natural beauty of Kota stone with classic checkered designs, adding a touch of sophistication to any space. Ideal for both traditional and contemporary settings, Kota Stone Checkered flooring offers a blend of style and strength, ensuring a long-lasting and visually stunning finish. Perfect for homes, offices, and commercial spaces, it brings a unique charm to every corner.",
+    mainImg: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-chess_checkered-1.png",
+    images: [
+      awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-chess_checkered-1.png",
+      awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-chess_checkered-2.png",
+    ],
+  },
+  {
+    model: "AGI-KWCL",
+    name: "Kota Stone Diamond Checkered",
+    category: "Kota Stone Checkered",
+    size: "Customized",
+    thickness: "Customized",
+    description:
+      "Enhance your interiors with the timeless appeal of Kota Stone Checkered patterns. This durable and elegant flooring option combines the natural beauty of Kota stone with classic checkered designs, adding a touch of sophistication to any space. Ideal for both traditional and contemporary settings, Kota Stone Checkered flooring offers a blend of style and strength, ensuring a long-lasting and visually stunning finish. Perfect for homes, offices, and commercial spaces, it brings a unique charm to every corner.",
+    mainImg: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-diamond_checkered-1.png",
+    images: [
+      awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-diamond_checkered-1.png",
+      awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-diamond_checkered-2.png",
+    ],
   },
 
   // ----------------------
@@ -387,8 +473,15 @@ const products = [
     thickness: "Customized",
     description:
       "Basalt Wall Cladding brings a sophisticated and modern touch to any building's exterior or interior. Basalt stone is known for its hardwearing properties and resistance to environmental elements, making it an ideal material for cladding. The natural dark color of Basalt adds depth and contrast, creating a striking visual effect that enhances the overall aesthetics of the structure. Its versatility allows it to be cut and shaped to meet specific design requirements.",
-    mainImg: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png",
-    images: [awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png"],
+    mainImg: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-1.png",
+    images: [
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-1.png",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-2.PNG",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-3.PNG",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-4.PNG",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-5.PNG",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-6.PNG",
+    ],
   },
 
   // ----------------------

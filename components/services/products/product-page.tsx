@@ -136,7 +136,7 @@ export default function ProductsPage(props: productsData) {
         >
           Packaging
         </h1>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-8">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-8 justify-items-center">
           {packaging.map((item) => {
             return (
               <div key={item.name} className="max-w-72 space-y-2">
@@ -171,7 +171,7 @@ export default function ProductsPage(props: productsData) {
         >
           Gallery
         </h1>
-        <div className="flex gap-12 flex-wrap">
+        <div className="flex gap-12 flex-wrap items-center lg:justify-start justify-center">
           {images.map((img) => (
             <div key={img} className="max-w-[350px] overflow-hidden">
               <Image width={500} height={350} src={img} alt={name} className="hover:scale-105 transition-all" />

@@ -12,6 +12,8 @@ import Image from "next/image";
 import _ from "lodash";
 import Link from "next/link";
 import SmallLoader from "../loaders/small-loader";
+import { X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function SearchModal() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -70,14 +72,26 @@ export default function SearchModal() {
   return (
     <Dialog open={isSearchModalOpen} onOpenChange={redefinedOnClose}>
       <DialogContent className="h-[calc(100vh-10%)] sm:p-6 p-4 flex flex-col bg-neutral-100">
-        <Input
-          placeholder="Search..."
-          onChange={(e) => {
-            setSearchTerm(e.target.value);
-            setIsLoading(true);
-          }}
-          className="w-full"
-        />
+        <div className="relative">
+          <Input
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+              setIsLoading(true);
+            }}
+            className="w-full mt-5 relative"
+          />
+          <button
+            className={cn(
+              " p-1 flex justify-center items-center rounded-full w-6 h-6 scale-90 absolute top-1/2 slide-out-to-top-1/2 right-3 text-sm bg-neutral-400 bg-opacity-70 hover:bg-opacity-85 active:bg-opacity-100 text-black",
+              searchTerm.length === 0 && "hidden"
+            )}
+            onClick={() => setSearchTerm("")}
+          >
+            <X />
+          </button>
+        </div>
         {isLoading ? (
           <SmallLoader />
         ) : searchedStones.length <= 0 ? (
@@ -118,7 +132,13 @@ export default function SearchModal() {
                   onClick={redefinedOnClose}
                   className="flex gap-2 p-2 w-[220] bg-neutral-200 rounded-lg items-center max-h-[108px] hover:shadow-md hover:scale-105 transition-all"
                 >
-                  <Image src={stone.mainImg} alt={stone.name} width={100} height={100} className="max-h-16" />
+                  <Image
+                    src={stone.mainImg || (stone.src as string)}
+                    alt={stone.name}
+                    width={100}
+                    height={100}
+                    className="max-h-16"
+                  />
                   <div className="flex flex-col">
                     <strong>
                       <p className="">{stone.name}</p>

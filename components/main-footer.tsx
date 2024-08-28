@@ -20,7 +20,7 @@ export default function MainFooter() {
             We are a team of passionate people whose goal is to improve everyone&#39;s lifestyle through our natural and
             rare products. We build great products to solve your project quality requirements. Our products are designed
             for anyone looking to elevate their space and want to welcome themselves in the luxury world of natural
-            stones
+            stones.
           </p>
 
           {/* Right */}

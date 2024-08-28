@@ -25,6 +25,7 @@ export default function ServicesCategory() {
   }
 
   const { setServicesTitle } = useStateStore();
+
   let artifacts;
   useEffect(() => {
     setServicesTitle(categoryName);
@@ -63,6 +64,23 @@ export default function ServicesCategory() {
                   <ServicesCard key={index} category={subCategory} />
                 ))}
           </div>
+          {categoryName === "Kota Stone" && (
+            <>
+              <div>
+                <h1 className={cn("text-4xl font-bold text-primary-2 text-center", cormorantGaramond.className)}>
+                  Premium Kota Stone
+                </h1>
+                <hr className="mt-2" />
+              </div>
+              <div className="flex justify-around gap-10 flex-wrap">
+                {products
+                  .filter((product) => product.category === "Kota Stone Checkered")
+                  .map((subCategory: any, index: number) => (
+                    <ServicesCard key={index} category={{ name: subCategory.name, imgUrl: subCategory.mainImg }} />
+                  ))}
+              </div>
+            </>
+          )}
         </div>
       </div>
     </main>

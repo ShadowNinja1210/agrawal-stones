@@ -19,7 +19,7 @@ export default function ServicesSubCategory() {
   let subCategoryName = ReverseKebab(list?.[3] ?? "");
   let subName;
 
-  if (subCategoryName === "Slabs" || subCategoryName === "Wall Cladding") {
+  if (subCategoryName === "Slabs" || subCategoryName === "Wall Cladding" || subCategoryName === "Cobbles") {
     subName = subCategoryName;
     subCategoryName = categoryName + " " + subCategoryName;
   } else if (subCategoryName === "3 D 2 D Work") {
@@ -40,6 +40,22 @@ export default function ServicesSubCategory() {
   const subCategoryData = products.filter((item) => item.category === subCategoryName);
   console.log(subCategoryData);
 
+  if (
+    subCategoryName === "Kota Stone Chess Checkered" ||
+    subCategoryName === "Kota Stone Diamond Checkered" ||
+    subCategoryName === "Kota Stone Cobbles" ||
+    subCategoryName === "Sandstone Cobbles" ||
+    subCategoryName === "Basalt Cobbles"
+  ) {
+    const productData = products.find((item) => item.name === subCategoryName) as productsData;
+    console.log("Product data for checkered", productData);
+    return (
+      <main className="flex flex-col gap-4 lg:items-start items-center">
+        <CustomBreadCrumb list={list as string[]} />
+        <div className="space-y-6">{productData ? <ProductsPage {...productData} /> : "No products available."}</div>
+      </main>
+    );
+  }
   return (
     <main>
       <CustomBreadCrumb list={list as string[]} />

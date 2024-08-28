@@ -1,6 +1,6 @@
 "use client";
 
-import { HandHelping, Home, PanelRight, Phone, Search, Users } from "lucide-react";
+import { Hammer, HandHelping, Home, PanelRight, Pencil, PenTool, Phone, Search, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -33,11 +33,11 @@ export const Navbar = () => {
           <li className={`${page === "services" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
             <Link href="/services">Services</Link>
           </li>
-          <li className={`${page === "about" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
-            <Link href="/about">About us</Link>
-          </li>
           <li className={`${page === "customize" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
             <Link href="/customize">Customize</Link>
+          </li>
+          <li className={`${page === "about" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
+            <Link href="/about">About us</Link>
           </li>
         </ul>
       </div>
@@ -101,6 +101,19 @@ export const Navbar = () => {
                   <SheetClose className="flex items-center gap-4">
                     <HandHelping />
                     Services
+                  </SheetClose>
+                </Link>
+
+                <Link
+                  href="/customize"
+                  className={cn(
+                    "hover:text-foreground px-2.5",
+                    page === "customize" ? "text-foreground" : "text-muted-foreground"
+                  )}
+                >
+                  <SheetClose className="flex items-center gap-4">
+                    <Hammer />
+                    Customize
                   </SheetClose>
                 </Link>
 

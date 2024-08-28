@@ -1,4 +1,5 @@
 export type productsData = {
+  src?: string;
   name: string;
   model: string;
   category: string;
