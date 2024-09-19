@@ -19,7 +19,7 @@ import { GiToolbox } from "react-icons/gi";
 import { LuShieldCheck } from "react-icons/lu";
 import { PiHardHatBold } from "react-icons/pi";
 import { FaTruckMoving } from "react-icons/fa";
-import { Facebook } from "lucide-react";
+import { Facebook, Package } from "lucide-react";
 import { awsBaseUrlFree } from "@/public/assets/data";
 
 // UI Components
@@ -36,7 +36,7 @@ export default function ProductsPage(props: productsData) {
       name: "packaging-2",
       title: "Robust Packaging",
       description: "We craft durable wooden crates.",
-      icon: <GiToolbox />,
+      icon: <Package />,
     },
     {
       name: "packaging-4",

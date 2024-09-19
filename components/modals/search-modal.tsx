@@ -100,7 +100,7 @@ export default function SearchModal() {
             <p className="text-center p-2">No stones found.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-2 gap-3 overflow-y-scroll p-2">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-3 overflow-y-scroll p-2">
             {searchedStones.map((stone) => {
               // Category of the stone in lower case
               const category = stone.category.toLowerCase();
@@ -130,7 +130,7 @@ export default function SearchModal() {
                   href={stoneLink}
                   key={stone.model}
                   onClick={redefinedOnClose}
-                  className="flex gap-2 p-2 w-[220] bg-neutral-200 rounded-lg items-center max-h-[108px] hover:shadow-md hover:scale-105 transition-all"
+                  className="flex gap-2 p-2 min-w-[220] bg-neutral-200 rounded-lg items-center max-h-[108px] hover:shadow-md hover:scale-105 transition-all"
                 >
                   <Image
                     src={stone.mainImg || (stone.src as string)}

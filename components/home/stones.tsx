@@ -6,25 +6,25 @@ import { awsBaseUrlFree } from "@/public/assets/data";
 
 const stones = [
   {
-    image: awsBaseUrlFree + "/assets/stone1.svg",
-    title: "Handmade Modern Artifacts",
+    image: "/assets/stone1.svg",
+    title: "Natural Stones",
     description:
-      "Agrawal Stones' Handmade Modern Artifacts blend traditional craftsmanship with contemporary design, creating pieces that serve as stunning focal points in any environment.",
-    link: "/services/#limestone",
+      "Agrawal Stones' Collection is a versatile range of natural stone options, designed to enhance both interiors and exteriors with their timeless beauty and durability.",
+    link: "/services",
   },
   {
-    image: awsBaseUrlFree + "/assets/stone2.svg",
+    image: "/assets/stone2.svg",
     title: "CNC Work",
     description:
       "Agrawal Stones' CNC Work brings precision and artistry together, offering intricate designs that add a unique character to both modern and traditional spaces.",
     link: "/services/#sandstone",
   },
   {
-    image: awsBaseUrlFree + "/assets/stone3.svg",
-    title: "Natural Stones",
+    image: "/assets/stone3.svg",
+    title: "Handmade Modern Artifacts",
     description:
-      "Agrawal Stones' Collection is a versatile range of natural stone options, designed to enhance both interiors and exteriors with their timeless beauty and durability.",
-    link: "/services",
+      "Agrawal Stones' Handmade Modern Artifacts blend traditional craftsmanship with contemporary design, creating pieces that serve as stunning focal points in any environment.",
+    link: "/services/#limestone",
   },
 ];
 

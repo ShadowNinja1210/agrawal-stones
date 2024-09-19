@@ -59,9 +59,9 @@ const collections = [
         name: "CNC Work",
         imgUrl: "/assets/categories/cnc/3d-2d/3d_2d-1.PNG",
         subCategories: [
-          { name: "Jaali Work", imgUrl: awsBaseUrlFree + "/assets/categories/cnc/jaali/jaali-1.png" },
-          { name: "3D/2D Work", imgUrl: awsBaseUrlFree + "/assets/categories/cnc/3d-2d/3d_2d-1.PNG" },
           { name: "Custom Work", imgUrl: awsBaseUrlFree + "/assets/custom-icon.png" },
+          { name: "3D/2D Work", imgUrl: awsBaseUrlFree + "/assets/categories/cnc/3d-2d/3d_2d-1.PNG" },
+          { name: "Jaali Work", imgUrl: awsBaseUrlFree + "/assets/categories/cnc/jaali/jaali-1.png" },
         ],
       },
     ],
@@ -85,7 +85,7 @@ const collections = [
         ],
       },
       {
-        name: "Kota Stone",
+        name: "Lime Stone",
         imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-blue-2.png",
         subCategories: [
           { name: "Slabs", imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-blue-2.png" },
@@ -101,7 +101,7 @@ const collections = [
       },
       {
         name: "Basalt",
-        imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding.png",
+        imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-1.png",
         subCategories: [
           { name: "Slabs", imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-slab.jpg" },
           { name: "Wall Cladding", imgUrl: awsBaseUrlFree + "/assets/categories/basalt/basalt-wall_cladding-1.png" },
@@ -122,182 +122,182 @@ const products = [
   {
     model: "AGI-HM01",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-1.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-1.JPG",
   },
   {
     model: "AGI-HM02",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-2.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-2.JPG",
   },
   {
     model: "AGI-HM03",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-3.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-3.JPG",
   },
   {
     model: "AGI-HM04",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-4.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-4.JPG",
   },
   {
     model: "AGI-HM05",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-5.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-5.JPG",
   },
   {
     model: "AGI-HM06",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-6.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-6.JPG",
   },
   {
     model: "AGI-HM07",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-7.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-7.JPG",
   },
   {
     model: "AGI-HM08",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-8.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-8.JPG",
   },
   {
     model: "AGI-HM10",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-10.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-10.JPG",
   },
   {
     model: "AGI-HM11",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-11.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-11.JPG",
   },
   {
     model: "AGI-HM12",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-12.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-12.JPG",
   },
   {
     model: "AGI-HM13",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-13.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-13.JPG",
   },
   {
     model: "AGI-HM14",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-14.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-14.JPG",
   },
   {
     model: "AGI-HM15",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-15.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-15.JPG",
   },
   {
     model: "AGI-HM16",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-16.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-16.JPG",
   },
   {
     model: "AGI-HM17",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-17.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-17.JPG",
   },
   {
     model: "AGI-HM18",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-18.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-18.JPG",
   },
   {
     model: "AGI-HM19",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-19.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-19.JPG",
   },
   {
     model: "AGI-HM20",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-20.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-20.JPG",
   },
   {
     model: "AGI-HM21",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-21.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-21.JPG",
   },
   {
     model: "AGI-HM22",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-22.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-22.JPG",
   },
   {
     model: "AGI-HM23",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-23.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-23.JPG",
   },
   {
     model: "AGI-HM24",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-24.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-24.JPG",
   },
   {
     model: "AGI-HM25",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-25.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-25.JPG",
   },
   {
     model: "AGI-HM26",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-26.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-26.JPG",
   },
   {
     model: "AGI-HM27",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-27.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-27.JPG",
   },
   {
     model: "AGI-HM28",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-28.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-28.JPG",
   },
   {
     model: "AGI-HM29",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-29.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-29.JPG",
   },
   {
     model: "AGI-HM30",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-30.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-30.JPG",
   },
   {
     model: "AGI-HM31",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-31.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-31.JPG",
   },
   {
     model: "AGI-HM32",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-32.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-32.JPG",
   },
   {
     model: "AGI-HM33",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-33.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-33.JPG",
   },
   {
     model: "AGI-HM34",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-34.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-34.JPG",
   },
   {
     model: "AGI-HM35",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-35.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-35.JPG",
   },
   {
     model: "AGI-HM36",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-36.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-36.JPG",
   },
   {
     model: "AGI-HM37",
     category: "Handmade Modern Artifact",
-    src: "/assets/categories/artifacts/artifact-37.jpg",
+    src: awsBaseUrlFree + "/assets/categories/artifacts/artifact-37.JPG",
   },
 
   // ----------------------
@@ -459,7 +459,13 @@ const products = [
     description:
       "Basalt Slabs are renowned for their strength and durability, making them an excellent choice for both interior and exterior applications. Basalt stone is a dense and fine-grained volcanic rock that offers a sleek and sophisticated appearance. Its natural dark tone adds elegance and modernity to any space, whether used in flooring, countertops, or wall cladding. Basalt slabs are also resistant to wear and tear, ensuring long-lasting performance with minimal maintenance.",
     mainImg: awsBaseUrlFree + "/assets/categories/basalt/basalt-slab.jpg",
-    images: [awsBaseUrlFree + "/assets/categories/basalt/basalt-slab.jpg"],
+    images: [
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-slab.jpg",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-slab_finishes-1.jpg",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-slab_finishes-2.jpg",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-slab_finishes-3.jpg",
+      awsBaseUrlFree + "/assets/categories/basalt/basalt-slab_finishes-4.jpg",
+    ],
   },
 
   // ----------------------

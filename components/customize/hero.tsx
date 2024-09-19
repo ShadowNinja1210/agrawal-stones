@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import CustomForm from "./form";
 import { cn } from "@/lib/utils";
 import { cormorantGaramond } from "@/lib/direct-font";
+import { awsBaseUrlFree } from "@/public/assets/data";
 
 export default function CustomHero() {
   return (
@@ -10,7 +11,7 @@ export default function CustomHero() {
       {/* Left Side */}
       <section className="flex flex-col gap-10 items-center ">
         <Image
-          src="/assets/customize.png"
+          src={awsBaseUrlFree + "/assets/customize.png"}
           className="p-16 pb-2"
           alt="Customize your product"
           width={500}

@@ -2,7 +2,7 @@
 
 const nextConfig = {
   images: {
-    domains: ["agrawalstones.s3.eu-north-1.amazonaws.com", "utfs.io"],
+    domains: ["agrawalstones.s3.eu-north-1.amazonaws.com", "agrawalstones.s3.eu-north-1.amazonaws.comhttps", "utfs.io"],
     remotePatterns: [
       {
         protocol: "https",

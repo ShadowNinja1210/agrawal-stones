@@ -26,7 +26,6 @@ export default function ServicesCategory() {
 
   const { setServicesTitle } = useStateStore();
 
-  let artifacts;
   useEffect(() => {
     setServicesTitle(categoryName);
   }, []);
@@ -54,7 +53,7 @@ export default function ServicesCategory() {
                     return (
                       <ImageCard
                         alt={product.model}
-                        src={awsBaseUrlFree + product.src}
+                        src={product.src || ""}
                         key={product.model}
                         model={product.model}
                       />
