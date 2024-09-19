@@ -18,12 +18,13 @@ import { productsData } from "@/lib/types";
 import { GiToolbox } from "react-icons/gi";
 import { LuShieldCheck } from "react-icons/lu";
 import { PiHardHatBold } from "react-icons/pi";
-import { FaTruckMoving } from "react-icons/fa";
-import { Facebook, Package } from "lucide-react";
+import { FaLinkedin, FaLinkedinIn, FaTruckMoving } from "react-icons/fa";
+import { Facebook, LinkedinIcon, Package } from "lucide-react";
 import { awsBaseUrlFree } from "@/public/assets/data";
 
 // UI Components
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Link from "next/link";
 
 export default function ProductsPage(props: productsData) {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
@@ -65,7 +66,13 @@ export default function ProductsPage(props: productsData) {
       <div className="flex flex-wrap gap-14 lg:justify-start justify-center items-center">
         {/* Main Image */}
         <div className="xl:max-w-[500px] xl:max-h-[350px] max-w-[500px] max-h-[350px] lg:max-w-[400px] lg:max-h-[280px] rounded-md overflow-hidden">
-          <Image width={500} height={350} src={mainImg} alt={name} className="hover:scale-105 transition-all" />
+          <Image
+            width={500}
+            height={350}
+            src={mainImg}
+            alt={name}
+            className="hover:scale-105 duration-1000 transition-all"
+          />
         </div>
 
         {/* Side Details */}
@@ -91,18 +98,13 @@ export default function ProductsPage(props: productsData) {
 
           {/* Social Media */}
           <div className="flex gap-4">
-            <button className="rounded-sm h-9 w-9 p-2 hover:p-0 bg-blue-700 flex justify-center items-center text-white">
-              <Facebook />
-            </button>
-            <button className="rounded-sm h-9 w-9 p-2 hover:p-0 bg-blue-700 flex justify-center items-center text-white">
-              <Facebook />
-            </button>
-            <button className="rounded-sm h-9 w-9 p-2 hover:p-0 bg-blue-700 flex justify-center items-center text-white">
-              <Facebook />
-            </button>
-            <button className="rounded-sm h-9 w-9 p-2 hover:p-0 bg-blue-700 flex justify-center items-center text-white">
-              <Facebook />
-            </button>
+            <Link
+              href="https://www.linkedin.com/company/agrawal-group-of-industries/"
+              target="_blank"
+              className="rounded-sm transition-all duration-700  hover:scale-110 bg-white flex justify-center items-center"
+            >
+              <FaLinkedin className="fill-blue-700 h-9 w-9" />
+            </Link>
           </div>
 
           {/* Enquiry Button */}
@@ -146,7 +148,7 @@ export default function ProductsPage(props: productsData) {
                     alt={item.name}
                     width={1000}
                     height={1000}
-                    className="aspect-[4/3] w-72 h-52 cursor-pointer object-cover hover:scale-105 transition-all"
+                    className="aspect-[4/3] w-72 h-52 cursor-pointer object-cover hover:scale-105 duration-1000 transition-all"
                   />
                 </div>
                 <div className="flex gap-2 items-center">
@@ -174,7 +176,13 @@ export default function ProductsPage(props: productsData) {
         <div className="flex gap-12 flex-wrap items-center lg:justify-start justify-center">
           {images.map((img) => (
             <div key={img} className="max-w-[350px] overflow-hidden">
-              <Image width={500} height={350} src={img} alt={name} className="hover:scale-105 transition-all" />
+              <Image
+                width={500}
+                height={350}
+                src={img}
+                alt={name}
+                className="hover:scale-105 duration-1000 transition-all"
+              />
             </div>
           ))}
         </div>

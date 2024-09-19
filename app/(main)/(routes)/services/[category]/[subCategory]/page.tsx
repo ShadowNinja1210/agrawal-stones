@@ -60,7 +60,7 @@ export default function ServicesSubCategory() {
     <main>
       <CustomBreadCrumb list={list as string[]} />
       <div className="flex justify-around gap-10 flex-wrap py-4">
-        {subCategoryName === "3D/2D Work" ? (
+        {subCategoryName === "3D/2D Work" || subCategoryName === "Jaali Work" ? (
           products
             .filter((product) => {
               console.log("Product", product);

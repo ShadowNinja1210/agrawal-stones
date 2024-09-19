@@ -38,7 +38,9 @@ export default function ServicesSubCard({
           alt={category.name}
           width={400}
           height={500}
-          className={cn("max-h-64 max-w-80 object-cover transition-all hover:scale-105 aspect-[1000/690]")}
+          className={cn(
+            "max-h-64 max-w-80 object-cover transition-all duration-1000 hover:scale-105 aspect-[1000/690]"
+          )}
         />
       </div>
 

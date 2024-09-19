@@ -52,7 +52,7 @@ const collections = [
     categories: [
       {
         name: "Handmade Modern Artifact",
-        imgUrl: awsBaseUrlFree + "/assets/categories/artifacts/artifact-1.JPG",
+        imgUrl: awsBaseUrlFree + "/assets/categories/artifacts/artifact-7.JPG",
         subCategories: [],
       },
       {
@@ -305,7 +305,7 @@ const products = [
   // ----------------------
   {
     model: "AGI-CNCJ",
-    category: "CNC Work",
+    category: "Jaali Work",
     src: "/assets/categories/cnc/jaali/jaali-1.png",
   },
 

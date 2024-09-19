@@ -24,7 +24,7 @@ export default function ServicesCard({ category }: { category: { name: string; i
           alt={category.name}
           width={400}
           height={500}
-          className={cn("max-h-64 max-w-80 object-cover transition-all hover:scale-105 aspect-[4/3]")}
+          className={cn("max-h-64 max-w-80 object-cover transition-all hover:scale-105 duration-1000 aspect-[4/3]")}
         />
       </div>
 
