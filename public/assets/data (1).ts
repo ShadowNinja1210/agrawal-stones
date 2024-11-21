@@ -1,4 +1,4 @@
-const awsBaseUrlFree = "https://agrawalstones.s3.eu-north-1.amazonaws.com";
+const awsBaseUrlFree = "";
 
 const contacts = [
   {
