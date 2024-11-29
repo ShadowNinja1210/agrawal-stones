@@ -8,20 +8,20 @@ const contacts = [
   {
     id: 1,
     type: "phone",
-    name: "Govind Agrawal",
-    contact: 9414190181,
+    name: "Anuj Agrawal",
+    contact: 8619759018,
   },
   {
     id: 2,
     type: "phone",
-    name: "Manoj Agrawal",
-    contact: 9413002381,
+    name: "Mudit Agrawal",
+    contact: 8094567181,
   },
   {
     id: 3,
     type: "email",
-    name: "Agrawal Stones",
-    contact: "agrawalstones81@gmail.com",
+    name: "Anuj Agrawal",
+    contact: "anuj@agrawalstones.com",
   },
 ];
 
