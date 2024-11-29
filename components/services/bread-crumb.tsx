@@ -24,10 +24,10 @@ export default function CustomBreadCrumb({ list }: { list: string[] }) {
             index === 1
               ? "/" + item
               : index === 2
-              ? "/services/" + item
+              ? "/products/" + item
               : index === 3
-              ? "/services/" + list[index - 1] + "/" + item
-              : index === 4 && "/services/" + list[index - 2] + "/" + list[index - 1] + "/" + item;
+              ? "/products/" + list[index - 1] + "/" + item
+              : index === 4 && "/products/" + list[index - 2] + "/" + list[index - 1] + "/" + item;
 
           return (
             index != 0 &&

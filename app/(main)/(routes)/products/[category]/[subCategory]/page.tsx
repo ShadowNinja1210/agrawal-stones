@@ -41,9 +41,9 @@ export default function ServicesSubCategory() {
   console.log(subCategoryData);
 
   if (
-    subCategoryName === "Kota Stone Chess Checkered" ||
-    subCategoryName === "Kota Stone Diamond Checkered" ||
-    subCategoryName === "Kota Stone Cobbles" ||
+    subCategoryName === "Lime Stone Chess Checkered" ||
+    subCategoryName === "Lime Stone Diamond Checkered" ||
+    subCategoryName === "Lime Stone Cobbles" ||
     subCategoryName === "Sandstone Cobbles" ||
     subCategoryName === "Basalt Cobbles"
   ) {

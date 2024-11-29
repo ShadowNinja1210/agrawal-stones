@@ -12,7 +12,7 @@ export default function ServicesCard({ category }: { category: { name: string; i
   const categoryName = list?.[2] ?? "";
   const categoryKebab = _.kebabCase(category.name);
 
-  let categoryUrl = "/services/" + categoryName + "/" + categoryKebab;
+  let categoryUrl = "/products/" + categoryName + "/" + categoryKebab;
   if (category.name === "Custom Work") {
     categoryUrl = "/customize";
   }

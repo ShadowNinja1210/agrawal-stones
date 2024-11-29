@@ -29,7 +29,7 @@ export default function Hero3() {
 
         <div className="flex flex-col gap-4">
           <div>
-            <Link href="/services">
+            <Link href="/products">
               <Button size="lg" className="text-lg">
                 Explore Our Services
               </Button>

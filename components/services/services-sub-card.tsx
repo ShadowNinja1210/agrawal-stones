@@ -20,7 +20,7 @@ export default function ServicesSubCard({
   const categoryKebab = _.kebabCase(category.name);
 
   const categoryUrl = linkOn
-    ? "/services/" + categoryName + "/" + subCategoryName + "/" + categoryKebab
+    ? "/products/" + categoryName + "/" + subCategoryName + "/" + categoryKebab
     : category.imgUrl;
 
   const linkTarget = linkOn ? "_self" : "_blank";

@@ -123,7 +123,7 @@ export default function SearchModal() {
                 : _.kebabCase(category);
 
               // Dynamic URL
-              const stoneLink = "/services/" + urlCategory + "/" + _.kebabCase(stone.name);
+              const stoneLink = "/products/" + urlCategory + "/" + _.kebabCase(stone.name);
 
               return (
                 <Link

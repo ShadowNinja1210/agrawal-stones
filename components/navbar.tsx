@@ -30,8 +30,8 @@ export const Navbar = () => {
           <li className={`${page === "" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
             <Link href="/">Home</Link>
           </li>
-          <li className={`${page === "services" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
-            <Link href="/services">Services</Link>
+          <li className={`${page === "products" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
+            <Link href="/products">Products</Link>
           </li>
           <li className={`${page === "customize" ? "text-neutral-900 font-semibold" : ""} hover:text-neutral-800`}>
             <Link href="/customize">Customize</Link>
@@ -92,7 +92,7 @@ export const Navbar = () => {
                 </Link>
 
                 <Link
-                  href="/services"
+                  href="/products"
                   className={cn(
                     "hover:text-foreground px-2.5",
                     page === "services" ? "text-foreground" : "text-muted-foreground"

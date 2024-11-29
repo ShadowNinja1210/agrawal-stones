@@ -8,28 +8,28 @@ const contacts = [
   {
     id: 1,
     type: "phone",
-    name: "Anuj Agrawal",
-    contact: 8619759018,
+    name: "Govind Agrawal",
+    contact: 9414190181,
   },
   {
     id: 2,
     type: "phone",
-    name: "Mudit Agrawal",
-    contact: 9214567181,
+    name: "Manoj Agrawal",
+    contact: 9413002381,
   },
   {
     id: 3,
     type: "email",
-    name: "Anuj Agrawal",
-    contact: "anuj@agrawalstones.com",
+    name: "Agrawal Stones",
+    contact: "agrawalstones81@gmail.com",
   },
 ];
 
 const addresses = [
   {
     id: 1,
-    name: "Krishna Udhyog",
-    address: ["G-329, Road number 6, Indraprasth Industrial Area,", "Kota, Rajasthan, 324001"],
+    name: "Krishna Udyog",
+    address: ["G-329(A), Road No. 6, Indraprastha Industrial Area,", "Kota, Rajasthan, 324005"],
     mapUrl:
       "https://www.google.com/maps/embed/v1/place?q=Indraprasth+Industrial+Area&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
   },
@@ -96,6 +96,10 @@ const collections = [
           {
             name: "Cobbles",
             imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-cobbles-2.png",
+          },
+          {
+            name: "Checkered",
+            imgUrl: awsBaseUrlFree + "/assets/categories/Kota+Stone/kota_stone-chess_checkered-1.png",
           },
         ],
       },
@@ -357,7 +361,7 @@ const products = [
   },
 
   // ----------------------
-  // Kota Stone Wall Cladding
+  // Sand Stone Wall Cladding
   // ----------------------
   {
     model: "AGI-SCOB",
@@ -372,8 +376,8 @@ const products = [
   },
   {
     model: "AGI-KCOB",
-    name: "Kota Stone Cobbles",
-    category: "Kota Stone Cobbles",
+    name: "Lime Stone Cobbles",
+    category: "Lime Stone Cobbles",
     size: "Customized",
     thickness: "Customized",
     description:
@@ -406,7 +410,7 @@ const products = [
   {
     model: "AGI-KWCL",
     name: "Kota Stone Wall Cladding",
-    category: "Kota Stone Wall Cladding",
+    category: "Lime Stone Wall Cladding",
     size: "Customized",
     thickness: "Customized",
     description:
@@ -421,7 +425,7 @@ const products = [
   {
     model: "AGI-KWCL",
     name: "Kota Stone Chess Checkered",
-    category: "Kota Stone Checkered",
+    category: "Checkered",
     size: "Customized",
     thickness: "Customized",
     description:
@@ -435,7 +439,7 @@ const products = [
   {
     model: "AGI-KWCL",
     name: "Kota Stone Diamond Checkered",
-    category: "Kota Stone Checkered",
+    category: "Checkered",
     size: "Customized",
     thickness: "Customized",
     description:
@@ -496,7 +500,7 @@ const products = [
   {
     model: "AGI-KOBL",
     name: "Kota Blue Natural",
-    category: "Kota Stone Slabs",
+    category: "Lime Stone Slabs",
     size: "Customized",
     thickness: "Customized",
     description:
@@ -510,7 +514,7 @@ const products = [
   {
     model: "AGI-KOBR",
     name: "Kota Brown Natural",
-    category: "Kota Stone Slabs",
+    category: "Lime Stone Slabs",
     size: "Customized",
     thickness: "Customized",
     description:
@@ -524,7 +528,7 @@ const products = [
   {
     model: "AGI-KOBK",
     name: "Kota Black Natural",
-    category: "Kota Stone Slabs",
+    category: "Lime Stone Slabs",
     size: "Customized",
     thickness: "Customized",
     description:
